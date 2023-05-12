@@ -1,0 +1,11 @@
+* {
+    --colorPrimary: #566B95;
+    --colorSecondary:#BDB6D7 ;
+    --colorSupplement: #010713;
+    --colorHeadingmain: #010713;
+    --colorLight: #D1D3E0;
+    --colorSunny:rgb(104, 90, 154);
+    --colorSunnyMiddle: #8E84B7;
+    --colorCloudy: #685A9A;
+    --backgroundColor: linear-gradient(rgba(118, 92, 215, 0.302), rgba(118, 92, 215, 0.302)), url("Images/vlak_verze03_1950_ghostc.jpg");
+}
