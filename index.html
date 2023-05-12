@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="style.css">
-    <!--link rel="stylesheet" href="colors_blue_yellowpoison.css"-->
-    <link rel="stylesheet" href="colors_blue_brown.css">
-    <!--link rel="stylesheet" href="colors_blue_violet.css"-->
-    <!--link rel="stylesheet" href="colors_blue_yellow.css"-->
+    <link rel="stylesheet" href="colors_blue_brown.css" title="1 blue brown">
+    <link rel="stylesheet alternate" href="colors_blue_yellowpoison.css" title="2 yellow poison">
+    <link rel="stylesheet alternate" href="colors_blue_violet.css" title="3 violet">
+    <link rel="stylesheet alternate" href="colors_blue_yellow.css" title="4 yellow">
     <link rel="stylesheet" href="queries.css">
     <title>Yoso_v1.3_final</title>
 </head>
+
 <body>
 
     <!--
@@ -24,24 +26,39 @@
         flex-column = prepne flex na vertikalni (sloupec)
         pozicuje pod sebe: menu, panel s nadpisem a dlazdicemi
     -->
-    <header class="d-flex flex-column">
+    <header>
         <div class="nav-bar">
             <nav class="menu nav">
+                <a href="#top" class="nav-logo">
+                    <img src="Images/yoso_logo02.png" alt="Yoso Logo">
+                    Yoso Czech
+                </a>
+    
                 <button class="nav-toggle" id="navToggle">Menu</button>
                 <ul class="nav-menu" id="navMenu">
-                    <li class="offset-lg-2 col-lg-1"><a href="#about_us">O nás</a></li>
-                    <li class="col-lg-2"><a href="#poskytovane_sluzby">Poskytované služby</a></li>
-                    <li class="col-lg-1"><a href="#partners">Reference</a></li>
-                    <li class="col-lg-2"><a href="#specialization">Jak pracujeme</a></li>
-                    <li class="col-lg-1"><a href="#support">Podpora</a></li>
-                    <li class="col-lg-1"><a href="#contact">Kontakt</a></li>
-                    <li class="col-lg-1"><a href="mailto:yoso@yoso.fi?subject=Napište nám"><img src="Images/Office/email_69.png" alt=""></a></li>
+                    <li>
+                        <a href="#about_us">O nás</a>
+                    </li>
+                    <li>
+                        <a href="#poskytovane_sluzby">Poskytované služby</a>
+                    </li>
+                    <li>
+                        <a href="#partners">Reference</a>
+                    </li>
+                    <li>
+                        <a href="#specialization">Jak pracujeme</a>
+                    </li>
+                    <li>
+                        <a href="#support">Podpora</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="mailto:yoso@yoso.fi?subject=Napište nám"><img src="Images/Office/email_69.png" alt=""></a>
+                    </li>
                 </ul>
-            </nav>    
-                
-            <div id="logo">
-                <img src="Images/yoso_logo02.png" alt="Yoso Logo">
-            </div>   
+            </nav>
         </div>
 
         <!--
@@ -54,13 +71,14 @@
             <!--
                 flex-grow-1 - rika, ze nadpis ma vyplnit celou vysku rodice (zde div obsahujici nadpis a dlazdice)
             -->
-            <h1 class="text-center text-uppercase vertical-height flex-grow-1">YOSO - s námi získáte náskok v digitálním světě</h1>
-            
+            <h1 class="text-center text-uppercase vertical-height flex-grow-1">S námi získáte náskok v digitálním světě</h1>
+
             <div class="motto pb-5">
-                <div class="row">
-                <span>Pomáháme firmám s tvorbou efektivních řešení v oblasti IT. Analyzujeme firemní procesy, vytváříme užitečné webové i mobilní aplikace na míru, integrujeme již existující řešení</span>
-                </div>
-            </div>      
+                <p>
+                    Pomáháme firmám s tvorbou efektivních řešení v oblasti IT.<br>
+                    Analyzujeme firemní procesy, vytváříme užitečné webové i mobilní aplikace na míru, integrujeme již existující řešení.<br>
+                </p>
+            </div>
 
             <div class="row hero-tiles">
                 <div class="offset-md-2 col-md-3">
@@ -75,15 +93,15 @@
                     <a href="#software" class="btn-tile btn btn-primary btn-hover">Software na míru</a>
                 </div>
             </div>
-        </div>      
+        </div>
     </header>
 
-    <main>                      
-        <section class="about-us">           
+    <main>
+        <section class="about-us">
             <div class="heading-main">
                 <h2 id="about_us">O nás</h2>
             </div>
-                            
+
             <div class="text-general-us">
                 <div class="container">
                     <div class="row">
@@ -91,33 +109,33 @@
                             <div class="button">
                                 <img src="Images/Office/cloud01_90.png" alt=""><br>
                                 Od roku 2013 poskytujeme odborné služby v oblasti architektonických IT řešení. Specializujeme se na analýzu a vývoj cloudových systémů pro podporu podnikových procesů. Navrhujmeme úspěšná softwarová řešení na zakázku. Výstupy našich systémů a aplikací jsou „user-friendly“.</div>
-                        </div>  
-                       
+                        </div>
+
                         <div class="col-lg-4 col-md-6 col-xs-12 tech-logo pb-5">
                             <div class="button">
-                                <img src="Images/Office/cloud_60.png"><br> 
+                                <img src="Images/Office/cloud_60.png"><br>
                                 Komplexnost našich služeb zahrnuje samozřejmě také konzultace a školení v oblasti návrhu cloudových služeb, vedení a organizace projektů vývoje software. Používáme metodiky mezinárodních standardů, týkající se bezpečnosti, například DevSecOps a další.
                             </div>
                         </div>
-                       
+
                         <div class="col-lg-4 col-md-6 col-xs-12 tech-logo pb-5">
                             <div class="button">
                                 <img src="Images/Office/book_87.png" alt=""><br>
                                 Kvalitativní rozvoj společnosti stavíme na inovacích a neustálém vzdělávání. Efektivní prezentace a odborná fundovanost navíc patří mezi ceněné přednosti - někteří členové našeho týmu působí jako vyučující na Katedře informatiky a výpočetní techniky Západočeské univerzity v Plzni.
                             </div>
-                        </div-->
+                            </div-->
 
 
-                                    
+
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
 
 
         <section id="processes" class="architecture">
             <div class="container">
-                <div class="heading-main">                     
+                <div class="heading-main">
                     <h2 id="poskytovane_sluzby">Poskytované služby</h2>
                 </div>
             </div>
@@ -129,7 +147,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6  col-xs-12">
                             <img src="Images/Office/page-1_img3_01_blue_454_light.jpg" alt="">
-                        </div>                       
+                        </div>
 
                         <div class="col-lg-6 col-md-6  col-xs-12">
                             <ul>
@@ -141,24 +159,23 @@
                             </ul>
                         </div>
                     </div>
-                </div>                                
-            </div>
-
-            <div class="kontakt">   
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-6  col-xs-12">Potřebujete více informací? Napište nám na e-mailovou adresu, rádi se Vám budeme věnovat.</div>
-                            
-                        <div class="col-lg-4 col-md-6  col-xs-12 ">
-                            <a href="mailto:yoso@yoso.fi?subject=Napište nám"><img src="Images/Office/email_69.png" alt=""></a>
-                        </div>                       
-                    </div>
                 </div>
             </div>
 
-        </section>        
-    
-        <section class="aplikace">            
+            <div class="kontakt">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6  col-xs-12">Potřebujete více informací? Napište nám na e-mailovou adresu, rádi se Vám budeme věnovat.</div>
+
+                        <div class="col-lg-4 col-md-6  col-xs-12 ">
+                            <a href="mailto:yoso@yoso.fi?subject=Napište nám"><img src="Images/Office/email_69.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="aplikace">
             <div class="heading-main">
                 <h3 id="software">Software na míru</h3>
             </div>
@@ -168,7 +185,7 @@
                     <div class="col-xxl-4 col-md-6  col-xs-12">
                         <img src="Images/Foto/fotolia_111918154_xs_274.jpg" alt="">
                     </div>
-                    
+
                     <div class="col-xxl-8 col-md-6  col-xs-12">
                         <ul>
                             <li>Na základě znalosti Vašich procesů a požadavků navrhneme a implementujeme optimální řešení v podobě software na míru</li>
@@ -176,9 +193,9 @@
                             <li>Vše za pomoci otevřených a standardizovaných technologií</li>
                         </ul>
                     </div>
+                </div>
             </div>
-            </div>
-            
+
             <div class="work-list-yellow row">
                 <div class="col-lg-8 col-md-6  col-xs-12">
                     <ul>
@@ -197,59 +214,71 @@
                 <div class="col-lg-4 col-md-6  col-xs-12">
                     <img src="Images/Foto/fotolia_111918154_xs_274.jpg" alt="">
                 </div>
-                                
+
                 <div class="col-lg-8 col-md-6  col-xs-12">
-                    <li>Využívané technologie, programovací nástroje  a vývojářské systémy</li>
-                </div>                
-            </div>            
-        </section>        
+                    <li>Využívané technologie, programovací nástroje a vývojářské systémy</li>
+                </div>
+            </div>
+        </section>
 
         <section class="partners">
             <div class="heading-main">
                 <h2 id="partners">Naši partneři</h2>
             </div>
 
-            <div class="container-fluid ">
-                <div class="partners-logo">
-                
-                    <div class="row">                                       
-                            
-                        <div class="col-lg-4 col-md-6 col-xs-12 tech-logo pb-5"><a href="https://dra.fi/" target="_blank"><img src="Images/Klienti/dra_127.png" alt=""></a>                       
-                        </div>
-                        
-                        <div class="col-lg-4 col-md-6 col-xs-12 tech-logo pb-5"><a href="https://palkkiopalvelu.fi/" target="_blank"><img src="Images/Klienti/palkkiopalvelu_92.png" alt=""></a>
-                        </div>                       
-                            
-                        <div class="col-lg-4 col-md-6 col-xs-12 tech-logo pb-5"><a href="https://panimoliitto.fi/" target="_blank"><img src="Images/Klienti/panimoliitto_90.png" alt=""></a>
-                        </div>
+            <div class="partners-logo">
+                <div class="row align-items-center">
 
-                        <div class="col-lg-4 col-md-6 col-xs-12 tech-logo pb-5"><a href="https://www.populon.fi/fi" target="_blank"><img src="Images/Klienti/populon_110.png" alt=""></a>
-                        </div>
-
-                        <div class="col-lg-4 offset-lg-4 col-md-6 offset-md- col-xs-12 tech-logo pb-5"><a href="https://www.prh.fi/fi/index.html" target="_blank"><img src="Images/Klienti/logo_prh_73.png" alt=""></a>
-                        </div>            
-                            
+                    <div class="col tech-logo">
+                        <a href="https://dra.fi/" target="_blank">
+                            <img src="Images/Klienti/dra_127.png" alt="">
+                        </a>
                     </div>
+
+                    <div class="col tech-logo">
+                        <a href="https://palkkiopalvelu.fi/" target="_blank">
+                            <img src="Images/Klienti/palkkiopalvelu_92.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col tech-logo">
+                        <a href="https://panimoliitto.fi/" target="_blank">
+                            <img src="Images/Klienti/panimoliitto_90.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col tech-logo">
+                        <a href="https://www.populon.fi/fi" target="_blank">
+                            <img src="Images/Klienti/populon_110.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col tech-logo">
+                        <a href="https://www.prh.fi/fi/index.html" target="_blank">
+                            <img src="Images/Klienti/logo_prh_73.png" alt="">
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="Work">    
+        <section class="Work">
             <div class="heading-main">
                 <h2 id="specialization">Jak pracujeme</h2>
             </div>
 
-            <div class="work">   
+            <div class="work">
                 <div class="container">
                     <div>
                         <p>Jsme s vámi od začátku až do konce vývoje projektu a následně při jeho udržování a modernizaci. Díky průběžné tvorbě projektu a soustavné komunikaci máte přehled nejen o průběhu prací, ale současně i o rozpočtu.</p>
                     </div>
 
-                    
+
                     <div class="work-list row">
                         <div class="col-lg-4 col-md-6  col-xs-12">
                             <img src="Images/Foto/fotolia_111918154_xs_300v.jpg" alt="">
-                        </div>                        
+                        </div>
 
                         <div class="col-lg-8 col-md-6  col-xs-12">
                             <h3>Inicializace projektu</h3>
@@ -262,8 +291,8 @@
 
                             <ul>
                                 <h4>Řízení projektu vnitřní firemní metodikou:</h4>
-                                 <li>definování rozsahu projektu, odhadu časové náročnosti a nákladů</li>
-                                 <li>definice potřebných lidských zdrojů pro realizaci zakázky i zajištění komunikace a informovanosti klienta</li>
+                                <li>definování rozsahu projektu, odhadu časové náročnosti a nákladů</li>
+                                <li>definice potřebných lidských zdrojů pro realizaci zakázky i zajištění komunikace a informovanosti klienta</li>
                             </ul>
                         </div>
                     </div>
@@ -273,21 +302,21 @@
                             <h3>Analýza potřeb a architektonický prototyp</h3>
 
                             <ul>
-                            <h4>Atributy úspěšné realizace projektu</h4>
-                            <li>analýza business procesů a hlavních cílů</li>
-                            <li>seznámení s případným existujícím prostředím zákazníka</li>
+                                <h4>Atributy úspěšné realizace projektu</h4>
+                                <li>analýza business procesů a hlavních cílů</li>
+                                <li>seznámení s případným existujícím prostředím zákazníka</li>
                             </ul>
 
                             <ul>
-                            <h4>Výstup</h4>
-                            <li>architektonický popis projektu v jazyce UML či Archimate</li>
-                            <li>způsob integrace tohoto grafického podání do stávajících procesů a systémů dané firmy</li>
+                                <h4>Výstup</h4>
+                                <li>architektonický popis projektu v jazyce UML či Archimate</li>
+                                <li>způsob integrace tohoto grafického podání do stávajících procesů a systémů dané firmy</li>
                             </ul>
 
                             <ul>
-                            <h4>Vývoj architektonického prototypu</h4>
-                            <li>ověří realizovatelnost navrženého řešení</li>
-                            <li>odhalí případné potíže s integrací do stávajících systémů v brzké fázi projektu</li>
+                                <h4>Vývoj architektonického prototypu</h4>
+                                <li>ověří realizovatelnost navrženého řešení</li>
+                                <li>odhalí případné potíže s integrací do stávajících systémů v brzké fázi projektu</li>
                             </ul>
                         </div>
 
@@ -298,26 +327,26 @@
                 </div>
             </div>
 
-            <div class="kontakt">   
+            <div class="kontakt">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-6  col-xs-12">Potřebujete více informací? Napište nám na e-mailovou adresu, rádi se Vám budeme věnovat.
                         </div>
-                            
+
                         <div class="col-lg-4 col-md-6  col-xs-12">
                             <a href="mailto:yoso@yoso.fi?subject=Napište nám"><img src="Images/Office/email_69.png" alt=""></a>
-                        </div>                       
+                        </div>
                     </div>
                 </div>
-            </div>            
-            
-            <div class="work">   
+            </div>
+
+            <div class="work">
                 <div class="container">
                     <div class="work-list row">
                         <div class="col-lg-4 col-md-6  col-xs-12">
                             <img src="Images/Foto/agilní proces_300v.png" alt="">
                         </div>
-                        
+
                         <div class="col-lg-8 col-md-6  col-xs-12">
                             <h3>Agilní proces vývoje</h3>
                             <ul>
@@ -366,10 +395,10 @@
                         </div>
                     </div>
                 </div>
-            </div>                      
+            </div>
 
             <div class="container container-agile">
-            <img src="Images/Agilní proces vývoje800.png" alt="">
+                <img src="Images/Agilní proces vývoje800.png" alt="">
             </div>
         </section>
 
@@ -377,16 +406,16 @@
             <div class="heading-main">
                 <h2 id="support">Své starosti přenechte nám</h2>
             </div>
-            
+
             <div class="container">
                 <div class="row">
-            <p>Nedělejte kompromisy v podobě unifikovaných řešení, zvolte komfort s naším software na míru</p>
-        </div>
-        </div>
+                    <p>Nedělejte kompromisy v podobě unifikovaných řešení, zvolte komfort s naším software na míru</p>
+                </div>
+            </div>
 
             <div class="processes-info">
                 <div class="container">
-                                    
+
                     <div class="row">
                         <div class="col-lg-6 col-md-6  col-xs-12">
                             <ul>
@@ -397,25 +426,25 @@
                             </ul>
                         </div>
 
-                        
+
                         <div class="col-lg-6 col-md-6  col-xs-12">
-                                <img src="Images/Office/page-1_img3_01_blue_454_light.jpg" alt="">
-                        </div>                        
+                            <img src="Images/Office/page-1_img3_01_blue_454_light.jpg" alt="">
+                        </div>
                     </div>
-                </div>                                
+                </div>
             </div>
-        
+
             <div class="heading-main">
                 <h2>Technologie</h2>
             </div>
-            
+
             <div class="technologic-logo">
                 <div class="container ">
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-xs-12 tech-logo pb-5">
                             <img src="Images/Technologie/html_76.png" alt="">
-                        </div>  
-                        
+                        </div>
+
                         <div class="col-lg-3 col-md-6  col-xs-12 tech-logo pb-5">
                             <img src="Images/Technologie/JS_76.png" alt="">
                         </div>
@@ -425,42 +454,42 @@
                         </div>
 
                         <div class="col-lg-3 col-md-6 col-xs-12 tech-logo pb-5">
-                            <img src="Images/Technologie/openjdk_125.png"  alt="">
-                        </div>    
+                            <img src="Images/Technologie/openjdk_125.png" alt="">
+                        </div>
 
                         <div class="col-lg-3 col-md-6  col-xs-12 tech-logo pb-5">
                             <img src="Images/Technologie/sparxsystems_126.png" alt="">
-                        </div>                       
-                       
+                        </div>
+
                         <div class="col-lg-3 col-md-6 col-xs-12 tech-logo pb-5">
                             <img src="Images/Technologie/aws_amazon_95.png">
                         </div>
 
                         <div class="col-lg-3 col-md-6 col-xs-12 tech-logo pb-5">
                             <img src="Images/Technologie/docker01_126.png" alt="">
-                        </div>                  
+                        </div>
 
                         <div class="col-lg-3 col-md-6 col-xs-12 tech-logo pb-5">
                             <img src="Images/Technologie/sibboleth_156.png" alt="">
                         </div>
-                       
+
                         <div class="col-lg-3 col-md-6  col-xs-12 tech-logo pb-5">
                             <img src="Images/Technologie/react_95.png" alt="">
                         </div>
-                       
+
                         <div class="col-lg-3 col-md-6  col-xs-12 tech-logo pb-5">
                             <img src="Images/Technologie/Spring_126.png" alt="">
                         </div>
 
                         <div class="col-lg-3 col-md-6 col-xs-12 tech-logo pb-5">
                             <img src="Images/Technologie/redhat_OpenShift01_76.png" alt="">
-                        </div>               
+                        </div>
 
                         <div class="col-lg-3 col-md-6  col-xs-12 tech-logo pb-5">
                             <img src="Images/Technologie/ansible_95.png" alt="">
-                        </div>                       
+                        </div>
                     </div>
-                </div>        
+                </div>
             </div>
 
             <div class="heading-main">
@@ -474,54 +503,60 @@
             <div class="container-mapa">
                 <img src="Images/mapa2.png" alt="">
             </div>
-        </section>        
+        </section>
     </main>
 
     <footer class="footer-page">
 
-            <div class="back">
-               <br><br><a href="index.html">Zpět na titulní stránku</a>
-            </div>
-        
-            <div class="container-footer">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6  col-xs-12">
-                       <h5>Základní informace</h5>
+        <div class="back">
+            <a href="#top">Zpět na titulní stránku</a>
+        </div>
 
-                        <ul>                            
-                            <li>Firma: Yoso Czech s.r.o.</li>
-                            <li>IČO: 01511211</li>
-                            <li>Právní forma: Společnost s ručením omezeným</li>
-                            <li>Zápis v obchodním rejstříku: Spisová značka C 37217 vedená u Krajského soudu v Plzni</li>
-                            <li>Bankovní spojení:</li>
-                        </P>                            
-                    </div>                       
+        <div class="container-footer">
+            <div class="row">
+                <div class="col-lg-4 col-md-6  col-xs-12">
+                    <h5>Základní informace</h5>
 
-                    <div class="col-lg-4 col-md-6  col-xs-12">
-                        <h5>Závazné právní dokumenty:</h5>
+                    <ul>
+                        <li>Firma: Yoso Czech s.r.o.</li>
+                        <li>IČO: 01511211</li>
+                        <li>Právní forma: Společnost s ručením omezeným</li>
+                        <li>Zápis v obchodním rejstříku: Spisová značka C 37217 vedená u Krajského soudu v Plzni</li>
+                        <li>Bankovní spojení:</li>
+                        </P>
+                </div>
 
-                        <ul>
-                            <li>Obchodní podmínky (všeobecné právní otázky)</li>
-                            <li>Reklamační řád (otázky spojené s reklamacemi)</li>
-                            <li>Podmínky ochrany osobních údajů (ochrana osobních údajů)</li>
-                        </ul>
-                    </div>                       
+                <div class="col-lg-4 col-md-6  col-xs-12">
+                    <h5>Závazné právní dokumenty:</h5>
 
-                    <div class="col-lg-4 col-md-6  col-xs-12">
-                        <h5 id="contact">Kontakt:</h5>
-                            <ul>
-                                <li>Adresa:</li>
-                                    <li>Skrétova 475/8, Jižní Předměstí, 301 00 Plzeň</li>
-                            <li><a href="https://www.google.com/maps/place/Skr%C3%A9tova+475%2F8,+301+00+Plze%C5%88+3-Ji%C5%BEn%C3%AD+P%C5%99edm%C4%9Bst%C3%AD/@49.7447691,13.3686592,19.5z/data=!4m6!3m5!1s0x470af1fbfb3bff0f:0x89c8801d8d2bfb30!8m2!3d49.744777!4d13.369027!16s%2Fg%2F11c2233hcl" target="_blank">Zobrazit na mapě</a></li>
-                            <li>E-mail: yoso@yoso.fi</li>
-                            <li>Mob.:</li>
-                        </ul>        
-                    </div>   
+                    <ul>
+                        <li>
+                            <a href="#">Obchodní podmínky</a> (všeobecné právní otázky)
+                        </li>
+                        <li>
+                            <a href="#">Reklamační řád</a> (otázky spojené s reklamacemi)
+                        </li>
+                        <li>
+                            <a href="#">Podmínky ochrany osobních údajů</a> (ochrana osobních údajů)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6  col-xs-12">
+                    <h5 id="contact">Kontakt:</h5>
+                    <ul>
+                        <li>Adresa:</li>
+                        <li>Skrétova 475/8, Jižní Předměstí, 301 00 Plzeň</li>
+                        <li><a href="https://www.google.com/maps/place/Skr%C3%A9tova+475%2F8,+301+00+Plze%C5%88+3-Ji%C5%BEn%C3%AD+P%C5%99edm%C4%9Bst%C3%AD/@49.7447691,13.3686592,19.5z/data=!4m6!3m5!1s0x470af1fbfb3bff0f:0x89c8801d8d2bfb30!8m2!3d49.744777!4d13.369027!16s%2Fg%2F11c2233hcl" target="_blank">Zobrazit na mapě</a></li>
+                        <li>E-mail: yoso@yoso.fi</li>
+                        <li>Mob.:</li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
-            
-            <!--div class="mapa">
+
+        <!--div class="mapa">
                 <nav class="nav">
                     <ul>
                         <li><a href="#about_us">O nás</a></li>
@@ -540,7 +575,7 @@
                 <span>Yoso Czech s.r.o., e-mail: czech@yoso.fi, tel.: +420blablabla <br>
                     Copyright © Yoso Czech s.r.o. 2013-2023 • Všechna práva vyhrazena</span>            
             </div-->
-     
+
     </footer>
 
     <script>
@@ -549,4 +584,5 @@
         });
     </script>
 </body>
+
 </html>
