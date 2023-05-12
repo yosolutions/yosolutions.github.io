@@ -1,0 +1,25 @@
+default:
+  image: dockette/ssh:latest
+
+stages:
+  - build
+  - deploy
+
+variables:
+  DEVCZ_USER: "protector"
+  DEVCZ_HOST: "devcz.yoso.fi"
+
+create-archive:
+  stage: build
+  script:
+    - echo "Creating archive"
+    - tar --exclude='.gitlab_ci.yml' -czf website.tar.gz * 
+  artifacts:
+    paths:
+      - website.tar.gz
+
+deploy:
+  stage: deploy
+  script:
+    - chmod 600 ${DEVCZ_SSH_KEY}
+    - scp -i ${DEVCZ_SSH_KEY} website.tar.gz ${DEVCZ_USER}@${DEVCZ_HOST}:/opt/website/website.tar.gz
