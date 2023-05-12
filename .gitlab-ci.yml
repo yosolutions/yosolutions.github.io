@@ -23,3 +23,4 @@ deploy:
   script:
     - chmod 600 ${DEVCZ_SSH_KEY}
     - scp -i ${DEVCZ_SSH_KEY} website.tar.gz ${DEVCZ_USER}@${DEVCZ_HOST}:/opt/website/website.tar.gz
+    - ssh -i ${DEVCZ_SSH_KEY} ${DEVCZ_USER}@${DEVCZ_HOST} "cd /opt/website && ./deploy.sh"
