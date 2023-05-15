@@ -1,5 +1,5 @@
 default:
-  image: almalinux/9-minimal:9.2
+  image: almalinux/almalinux:8
 stages:
   - build
   - deploy
