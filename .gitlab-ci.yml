@@ -1,6 +1,5 @@
 default:
-  image: dockette/ssh:latest
-
+  image: almalinux/9-minimal:9.2
 stages:
   - build
   - deploy
