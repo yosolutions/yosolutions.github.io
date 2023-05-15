@@ -1,5 +1,5 @@
 default:
-  image: almalinux/almalinux:8
+  image: cytopia/ansible:2.13-aws
 stages:
   - build
   - deploy
