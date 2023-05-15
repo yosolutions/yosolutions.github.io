@@ -363,8 +363,10 @@ p {
     margin: auto;
 }
 
-h5 {
-    margin: 0px 0px 10px 57px;
+.container-footer h5 {
+    width: 20vw;
+    margin: auto;
+    padding: 0 0 0 20px;
 }
 
 .container-footer li {
