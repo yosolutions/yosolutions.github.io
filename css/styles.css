@@ -7,4 +7,41 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #000;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 2%;
+}
+
+.full-screen {
+  min-height: 100vh;
+}
+
+.bg-muted {
+  background-color: #fbfbfb;
+}
+
+.inherit-background {
+  background: inherit;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(84, 82, 82, 0.5);
+}
+
+.services-rectangle {
+  background-color: #0070d2;
+  width: 1.5rem;
+  height: auto;
+}
+
+.yoso-blue {
+  background-color: #0070d2;
+}
+
+.map-area-rectangle {
+  background-color: #0070d2;
+  width: 100px;
+  height: 100px;
 }
