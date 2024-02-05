@@ -10,7 +10,8 @@ body {
   box-sizing: border-box;
 }
 
-main {
+footer,
+.main-padding {
   padding: 2%;
 }
 
@@ -30,6 +31,12 @@ main {
   text-shadow: 2px 2px 4px rgba(84, 82, 82, 0.5);
 }
 
+.flags-shadow {
+  -webkit-box-shadow: 8px -10px 23px -15px rgba(161, 161, 166, 1);
+  -moz-box-shadow: 8px -10px 23px -15px rgba(161, 161, 166, 1);
+  box-shadow: 8px -10px 23px -15px rgba(161, 161, 166, 1);
+}
+
 .services-rectangle {
   background-color: #0070d2;
   width: 1.5rem;
@@ -42,6 +49,6 @@ main {
 
 .map-area-rectangle {
   background-color: #0070d2;
-  width: 100px;
-  height: 100px;
+  min-width: 80px;
+  min-height: 80px;
 }
