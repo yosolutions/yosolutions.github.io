@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yoso</title>
+  <link rel="icon" type="image/x-icon" href="images/yoso-symbol-blue.png">
 
   <!-- Montserrat font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar sticky-top navbar-expand-lg">
+  <nav class="navbar sticky-top navbar-expand-lg bg-muted">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <div>
         <a class="navbar-brand col-2" href="index.html">
@@ -52,15 +53,253 @@
             <a class="nav-link text-uppercase" href="#contacts">contacts</a>
           </li>
         </ul>
-        <div class="justify-content-end me-0" href="#">
-          <img src="images/finnish-flag.png" alt="Finnish flag" class="object-fit-cover shadow" width="24"
+        <div class="d-flex me-0 gap-1" href="#">
+          <img src="images/finnish-flag.png" alt="Finnish flag"
+            class="bg-muted object-fit-cover rounded border border-light-subtle flags-shadow" width="24px"
             height="auto" />
-          <img src="images/czech-flag.png" alt="Czech flag" class="object-fit-cover shadow" width="24" height="auto" />
+          <img src="images/czech-flag.png" alt="Czech flag"
+            class="bg-muted object-fit-cover rounded border border-light-subtle flags-shadow" width="24px"
+            height="auto" />
         </div>
       </div>
   </nav>
   <hr style="height:1px; width:90%; margin: auto; color: #DDD1D1" />
-  Services
+  <main>
+    <!-- Hero 2 -->
+    <section id="hero2"
+      class="full-screen container  d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+      <div class="col-12 col-lg-5">
+        <h1 class="fw-medium my-0">
+          Services subpage
+        </h1>
+        <div class="d-flex justify-content-end align-self-end">
+          <a href="#contacts" class="bg-black text-white text-decoration-none fw-semibold p-2 mt-5 rounded-pill">Book a
+            demo</a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 d-flex justify-content-center">
+        <img src="images/no-image.png" alt="Services page hero image" width="90%" height="auto">
+      </div>
+    </section>
+    <!-- Intro Subpage -->
+    <section>
+      <div class="container  d-flex flex-column justify-content-center gap-3 pt-5 pb-5">
+        <h5 class="text-center">How can you improve your business processes with our solutions</h5>
+        <p>You deserve quality solutions that match your needs and existing systems.</p>
+        <p class="fw-medium">We can help you achieve that by doing the following</p>
+        <div class="row flex-column-reverse flex-lg-row justify-content-between align-items-center">
+          <div class="col-12 col-lg-3">
+            <img src="images/no-image.png" alt="Home page image" width="90%" height="auto">
+          </div>
+          <div class="col-12 col-lg-8">
+            <ul class="d-flex flex-column gap-3">
+              <li>
+                <div class="d-flex justify-content-between">
+                  <span class="col-3 fw-medium">Analyzing</span>
+                  <span class="col-8">
+                    your current IT solutions and finding out how to enhance them.
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex justify-content-between">
+                  <span class="col-4 col-lg-3 fw-medium">Understanding</span>
+                  <span class="col-7 col-lg-8">
+                    your data and visual descriptions
+                    of your current and future situation, so you can see the changes and benefits.
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex justify-content-between">
+                  <span class="fw-medium">Creating</span>
+                  <span class="col-8">clear and visual descriptions of your current and future situation, so you can see
+                    changes and benefits.</span>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex justify-content-between">
+                  <span class="col-3 fw-medium">Using</span>
+                  <span class="col-8">
+                    industry-standard methods and tools, such as Archimate and UML, to ensure consistency,
+                    reliability, and compatibility of your solutions.
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design and deliver -->
+    <section class="container  d-flex flex-column text-secondary pt-5 pb-5 gap-3 justify-content-center">
+      <div class="col">
+        <h3>How we design and deliver ICT solutions</h3>
+      </div>
+      <div class="col-12"><img src="images/no-image.png" alt="Home page image" width="20%" height="auto"></div>
+      <p>Get ICT solutions that are functional, reliable, customized, and original. You deserve the best.</p>
+      <!-- Cards -->
+      <div class="d-flex flex-column flex-lg-row gap-3">
+        <div class="card col border-0 text-secondary">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold text-dark-emphasis">Definition</h5>
+            <p class="card-text">You share your needs and challenges with us, using methods such as interviews, surveys,
+              and observations. We listen to you and understand you. We also agree on the scope, goals, and success
+              criteria of the project with you.
+            </p>
+          </div>
+        </div>
+        <div class="card col border-0 text-secondary">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold text-dark-emphasis">Testing</h5>
+            <p class="card-text">You see different ideas and prototypes for the solution, using methods such as
+              brainstorming, sketching,
+              wireframing, and user testing. You give us your feedback and preferences. We then choose the best solution
+              that meets
+              your requirements and expectations with you.
+            </p>
+          </div>
+        </div>
+        <div class="card col border-0 text-secondary">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold text-dark-emphasis">Implementation</h5>
+            <p class="card-text">You get the solution in a flexible way, using agile methods, such as Scrum or Kanban.
+              We deliver working software in short iterations. Throughout the process, we work with you and adapt to
+              your changes.
+            </p>
+          </div>
+        </div>
+        <div class="card col border-0 text-secondary">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold text-dark-emphasis">Maintenance</h5>
+            <p class="card-text">You enjoy the solution after it is deployed, using methods such as
+              analytics, bug tracking, and user support. We keep an eye on the solution and fix any issues. We also
+              provide updates and improvements to the solution, based on your changing needs and new opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="container  d-flex flex-column justify-content-center pt-5 pb-5 gap-3">
+      <h3 class="text-uppercase text-secondary fw-normal">Technologies
+      </h3>
+      <div class="row justify-content-between">
+        <div class="col-12 col-lg-4">
+          <img src="images/no-image.png" alt="Technologies image" width="70%" height="auto">
+        </div>
+        <div class="d-flex flex-column col-lg-7 gap-3">
+          <h6 class="text-center text-uppercase fw-semibold">Distribution, production operations, and support</h6>
+          <div>
+            <p class="fw-medium">Operations and maintanance</p>
+            <ul>
+              <li>operations in high-availability mode</li>
+              <li>monitoring 24/7 and automated backup processes</li>
+              <li>security updates and bug fixes</li>
+              <li>documentation, maintenance guide and transition to your ICT department</li>
+            </ul>
+          </div>
+          <div>
+            <p class="fw-medium">Environments</p>
+            <ul>
+              <li>our solutions can be operated in private infrastructure, public cloud, or hybrid mode</li>
+              <li>deployment processes are automated</li>
+              <li>we prefer making solutions without vendor lock-in</li>
+            </ul>
+          </div>
+          <div>
+            <p class="fw-medium">Security</p>
+            <ul>
+              <li>we apply OWASP Application Security Verification Standard to our solutions</li>
+              <li>project is developed in accordance with your security policies and based on the current
+                state-of-the-art knowledge</li>
+              <li>for critical projects or projects governing sensitive data, we recommend performing external security
+                audit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Cards -->
+      <div class="d-flex flex-column flex-lg-row gap-3">
+        <div class="card col border-0">
+          <div class="card-body">
+            <h6 class="card-title fw-semibold">Java Development</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nesciunt impedit porro
+              illum repellendus, repellat, mollitia vitae voluptatibus consequuntur, minima ipsum ab! Assumenda nobis
+              nesciunt dolor rerum perspiciatis perferendis voluptates.
+            </p>
+          </div>
+        </div>
+        <div class="card col border-0">
+          <div class="card-body">
+            <h6 class="card-title fw-semibold">JavaScript Development</h6>
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore obcaecati, vitae
+              quo illo alias sunt laudantium iure assumenda, culpa, laboriosam magnam repellat. Eius quis dicta
+              distinctio non in, vero assumenda</p>
+          </div>
+        </div>
+        <div class="card col border-0">
+          <div class="card-body">
+            <h6 class="card-title fw-semibold">Phyton Development</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perspiciatis,
+              asperiores labore unde quod est aperiam numquam, quo praesentium vero exercitationem blanditiis nam ad
+              harum beatae tempora qui accusantium pariatur!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact us -->
+    <section id="contacts" class="d-flex flex-column justify-content-center pt-5 gap-3">
+      <div class="container">
+        <h3 class="text-uppercase text-secondary fw-normal">Let's meet - contact us
+        </h3>
+      </div>
+      <div
+        class="main-padding d-flex flex-column flex-lg-row gap-5 gap-lg-0 justify-content-between align-items-center yoso-blue p-5">
+        <div class="col-12 col-lg-5 d-flex flex-column gap-2 text-white text-center">
+          <h3 class="text-uppercase">We are ready to help your business grow</h3>
+          <p class="">Let's collaborate and explore the possibilities. Schedule a meeting for analysis.
+          </p>
+        </div>
+        <!-- Form -->
+        <form class="d-flex flex-column gap-3 col-12 col-lg-6" action="mailto:moi@yoso.fi?subject=Contact form"
+          method="post" enctype="text/plain">
+          <div class="col-auto d-flex gap-3">
+            <div class="col">
+              <label for="name" class="visually-hidden">Name</label>
+              <input type="text" required class="form-control" id="name" placeholder="Name" style="font-style: italic;">
+            </div>
+            <div class="col">
+              <label for="lastName" class="visually-hidden">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Last name" style="font-style: italic;">
+            </div>
+          </div>
+          <div class="col">
+            <label for="email" class="visually-hidden">email</label>
+            <input type="email" class="form-control" id="email" placeholder="email" style="font-style: italic;">
+          </div>
+          <div class="col-auto d-flex align-self-center">
+            <button type="submit" class="btn bg-white text-uppercase text-secondary fw-semibold rounded-pill">Book a
+              demo</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark opacity-50 fw-medium">
+    <div class="container d-flex flex-column justify-content-center gap-3" style="color:#E5E5E5;">
+      <div>
+        <h3 class="text-uppercase">YOSO OY</h3>
+        <h6 class="">Business ID 200203-6</h6>
+      </div>
+      <p class="text-uppercase m-0">&copy; 2023 | all rights reserved
+      </p>
+    </div>
+  </footer>
   <!-- Boostrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

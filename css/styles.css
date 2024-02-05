@@ -32,9 +32,8 @@ footer,
 }
 
 .flags-shadow {
-  -webkit-box-shadow: 8px -10px 23px -15px rgba(161, 161, 166, 1);
-  -moz-box-shadow: 8px -10px 23px -15px rgba(161, 161, 166, 1);
-  box-shadow: 8px -10px 23px -15px rgba(161, 161, 166, 1);
+  -webkit-box-shadow: 2px -4px 6px -3px #707070;
+  box-shadow: 2px -4px 6px -3px #707070;
 }
 
 .services-rectangle {
@@ -51,4 +50,14 @@ footer,
   background-color: #0070d2;
   min-width: 80px;
   min-height: 80px;
+}
+
+.security-rectangle {
+  background-color: #ffffff;
+  min-width: 50px;
+  min-height: 80px;
+}
+
+.collapse-color {
+  color: #a2004d;
 }
