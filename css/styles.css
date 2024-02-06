@@ -11,9 +11,9 @@ body {
 }
 
 footer,
-section,
+section .main-padding,
 .main-padding {
-  padding: 2% 5%;
+  padding: 5% 10%;
 }
 
 .full-screen {
@@ -22,6 +22,14 @@ section,
 
 .bg-muted {
   background-color: #fbfbfb;
+}
+
+.navbar-border {
+  border-bottom: 1px solid rgb(205, 205, 205);
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+  right: 3%;
 }
 
 .inherit-background {

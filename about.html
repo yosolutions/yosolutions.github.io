@@ -23,7 +23,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar sticky-top navbar-expand-lg bg-muted">
+  <nav class="navbar sticky-top navbar-expand-lg bg-muted navbar-border">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <div>
         <a class="navbar-brand col-2" href="index.html">
@@ -62,12 +62,13 @@
             height="auto" />
         </div>
       </div>
+    <div class="navbar-border"></div>
   </nav>
-  <hr style="height:1px; width:90%; margin: auto; color: #DDD1D1" />
+
   <main>
     <!-- Hero 3 -->
     <section id="hero3"
-      class="full-screen container d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+      class="container-fluid main-padding full-screen d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between align-items-center">
       <div class="col-12 col-lg-5">
         <h1 class="fw-medium my-0">
           About subpage
@@ -112,11 +113,11 @@
       </div>
     </section>
     <!-- Working with us -->
-    <section id="jobs" class="d-flex flex-column justify-content-center bg-muted pt-5 pb-5 gap-3">
-      <div class="container">
+    <section id="jobs" class="container-fluid main-padding d-flex flex-column justify-content-center bg-muted pt-5 pb-5 gap-3">
+      <div class="container-fluid">
         <p class="fs-3 fw-3 text-uppercase fw-semibold">Working with us</p>
       </div>
-      <div class="container text-secondary position-relative z-1">
+      <div class="container-fluid text-secondary position-relative z-1">
         <div class="col-12 col-lg-8">
           <p class="fw-semibold">We as a working place</p>
           <p>We are more than just an ICT company. We are a team of passionate, creative, and collaborative
@@ -148,21 +149,22 @@
         </div>
       </div>
     </section>
+
     <!-- Contact us -->
-    <section id="contacts" class="d-flex flex-column justify-content-center pt-5 gap-3">
-      <div class="container">
-        <p class="fs-3 text-uppercase fw-semibold">Let's meet - contact us
+    <section id="contacts" class="pt-2">
+      <div class="container-fluid main-padding">
+        <p class="fs-3 text-uppercase fw-semibold mb-0">Let's meet - contact us
         </p>
       </div>
       <div
-        class="main-padding d-flex flex-column flex-lg-row gap-5 gap-lg-0 justify-content-between align-items-center yoso-blue p-5 main-padding">
-        <div class="col-12 col-lg-5 d-flex flex-column gap-2 text-white text-center">
+        class="container-fluid main-padding d-flex flex-column flex-lg-row gap-5 gap-lg-0 justify-content-between align-items-center yoso-blue">
+        <div class="pt-5 col-12 col-lg-5 d-flex flex-column gap-2 text-white text-center">
           <h3 class="text-uppercase">We are ready to help your business grow</h3>
           <p class="">Let's collaborate and explore the possibilities. Schedule a meeting for analysis.
           </p>
         </div>
         <!-- Form -->
-        <form class="d-flex flex-column gap-3 col-12 col-lg-6" action="mailto:moi@yoso.fi?subject=Contact form"
+        <form class="d-flex flex-column gap-3 col-12 col-lg-6 pb-5" action="mailto:moi@yoso.fi?subject=Contact form"
           method="post" enctype="text/plain">
           <div class="col-auto d-flex gap-3">
             <div class="col">
@@ -186,8 +188,8 @@
       </div>
     </section>
   </main>
-  <footer class="bg-dark opacity-50 fw-medium">
-    <div class="container d-flex flex-column justify-content-center gap-3" style="color:#E5E5E5;">
+  <footer class="container-fluid main-padding bg-dark opacity-50 fw-medium">
+    <div class="d-flex flex-column justify-content-center gap-3 pt-3 pb-3" style="color:#E5E5E5;">
       <div>
         <h3 class="text-uppercase">YOSO OY</h3>
         <h6 class="">Business ID 200203-6</h6>
