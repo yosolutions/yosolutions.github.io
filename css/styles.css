@@ -16,6 +16,10 @@ section .main-padding,
   padding: 5% 10%;
 }
 
+.contacts-padding {
+  padding: 2% 10%;
+}
+
 .full-screen {
   min-height: 100vh;
 }
