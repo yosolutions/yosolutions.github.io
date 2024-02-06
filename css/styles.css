@@ -58,6 +58,11 @@ footer,
   min-height: 80px;
 }
 
-.collapse-color {
+.jobs-links-color {
+  color: #a2004d;
+}
+
+.jobs li::marker {
+  content: "➢";
   color: #a2004d;
 }
