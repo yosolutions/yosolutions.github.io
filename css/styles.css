@@ -11,8 +11,9 @@ body {
 }
 
 footer,
+section,
 .main-padding {
-  padding: 2%;
+  padding: 2% 5%;
 }
 
 .full-screen {
