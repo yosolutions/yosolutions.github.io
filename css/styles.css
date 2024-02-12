@@ -24,6 +24,10 @@ section .main-padding,
   min-height: 100vh;
 }
 
+.pointer-on-hover:hover {
+  cursor: pointer;
+}
+
 .bg-muted {
   background-color: #fbfbfb;
 }
@@ -78,4 +82,21 @@ section .main-padding,
 .jobs li::marker {
   content: "➢";
   color: #a2004d;
+}
+
+.working-with-us-container {
+  background-image: url("/images/working-with-us.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.working-with-us-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Adding a semi-transparent white background to div to make text readable */
+  padding: 1.5rem;
+  position: relative;
+}
+
+.wrapperHeight {
+  height: 18rem;
 }
