@@ -1,3 +1,11 @@
+:root {
+  font-size: 14px;
+  --main-bg: rgba(240, 248, 255, 0.59);
+  --yoso-blue: #0070d2;
+  --muted: rgba(251, 251, 251, 1);
+  --bs-secondary: rgba(0, 0, 0, 0.1);
+  --radius: 2rem;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -8,16 +16,82 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #000;
   box-sizing: border-box;
+  background-color: var(--main-bg);
+  /* background-color: rgba(0, 112, 210, 0.05); yoso blue as alternative */
 }
 
+/* paddings */
 footer,
 section .main-padding,
 .main-padding {
-  padding: 5% 10%;
+  padding: 5% 20%;
+}
+
+.navbar-padding {
+  padding: 2% 10%;
 }
 
 .contacts-padding {
-  padding: 2% 10%;
+  padding: 2% 20%;
+}
+
+/* colors */
+.bg-muted {
+  background-color: var(--muted);
+}
+
+.bg-secondary {
+  background-color: var(--bs-secondary);
+}
+
+.yoso-blue {
+  background-color: var(--yoso-blue);
+}
+
+.txt-yoso-blue {
+  color: var(--yoso-blue);
+}
+
+.main-bg {
+  background-color: var(--main-bg);
+}
+
+/* shadows */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(84, 82, 82, 0.5);
+}
+
+.card-with-shadow {
+  border-radius: var(--radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.card-with-shadow:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.border-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.border-shadow:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.flags-shadow {
+  -webkit-box-shadow: 2px -4px 6px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px -4px 6px -3px rgba(0, 0, 0, 0.1);
+}
+
+.services-rectangle {
+  background-color: var(--yoso-blue);
+}
+
+.map-area-rectangle {
+  min-width: 5rem;
+  min-height: 5rem;
 }
 
 .full-screen {
@@ -26,53 +100,6 @@ section .main-padding,
 
 .pointer-on-hover:hover {
   cursor: pointer;
-}
-
-.bg-muted {
-  background-color: #fbfbfb;
-}
-
-.navbar-border {
-  border-bottom: 1px solid rgb(205, 205, 205);
-  position: absolute;
-  bottom: 0;
-  left: 3%;
-  right: 3%;
-}
-
-.inherit-background {
-  background: inherit;
-}
-
-.text-shadow {
-  text-shadow: 2px 2px 4px rgba(84, 82, 82, 0.5);
-}
-
-.flags-shadow {
-  -webkit-box-shadow: 2px -4px 6px -3px #707070;
-  box-shadow: 2px -4px 6px -3px #707070;
-}
-
-.services-rectangle {
-  background-color: #0070d2;
-  width: 1.5rem;
-  height: auto;
-}
-
-.yoso-blue {
-  background-color: #0070d2;
-}
-
-.map-area-rectangle {
-  background-color: #0070d2;
-  min-width: 80px;
-  min-height: 80px;
-}
-
-.security-rectangle {
-  background-color: #ffffff;
-  min-width: 50px;
-  min-height: 80px;
 }
 
 .jobs-links-color {
@@ -92,11 +119,84 @@ section .main-padding,
 
 .working-with-us-container > div {
   background-color: rgba(255, 255, 255, 0.8);
-  /* Adding a semi-transparent white background to div to make text readable */
   padding: 1.5rem;
   position: relative;
 }
 
-.wrapperHeight {
+.wrapper-height {
   height: 18rem;
+}
+
+.border-radius {
+  border-radius: var(--radius);
+}
+
+.border-muted {
+  border: 1px solid var(--muted);
+}
+
+.distribution-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4rem;
+  position: absolute;
+  z-index: 5;
+  top: -1rem;
+  align-self: center;
+  align-content: center;
+  background-color: var(--yoso-blue);
+}
+
+/* media queries */
+@media screen and (max-width: 767px) {
+  footer,
+  section .main-padding,
+  .main-padding {
+    padding: 10%;
+  }
+
+  .contacts-padding {
+    padding: 2% 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  :root {
+    font-size: 22px;
+  }
+
+  footer,
+  section .main-padding,
+  .main-padding {
+    padding: 5% 20%;
+  }
+
+  .contacts-padding {
+    padding: 2% 20%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  :root {
+    font-size: 24px;
+  }
 }
