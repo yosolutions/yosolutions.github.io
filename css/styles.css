@@ -130,9 +130,13 @@
   --bs-btn-active-border-color: var(--yoso-blue-600);
   --bs-btn-active-shadow: 0px 2px 8px 0px rgba(0, 90, 168, 0.4);
 }
-/* card customization */
+
 .card {
   border: none;
+}
+
+.container {
+  --bs-gutter-x: 5.5rem;
 }
 
 * {
@@ -356,13 +360,20 @@ body {
   margin-right: 1rem;
 }
 .card-icon i {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
+
 .card-with-icon > .card-body {
   padding: 0;
 }
 .card-with-icon.max-width-3125rem {
   max-width: 31.25rem;
+}
+.card-with-icon > .card-body > .card-text li {
+  list-style: circle;
+}
+.card-with-icon > .card-body > .card-text li::marker {
+  color: var(--yoso-blue-600);
 }
 
 /* card-with-rectangle */
@@ -499,7 +510,7 @@ body {
   }
   .navbar-collapse {
     position: absolute;
-    top: 6.716rem;
+    top: 6.5rem;
     right: 0;
     flex-basis: 30%;
     flex-grow: 0;
@@ -508,7 +519,7 @@ body {
     flex-direction: column;
     border-radius: 1.875rem;
     border: 1px solid var(--gray-200);
-    box-shadow: 0px 2px 11px 8px rgba(210, 215, 222, 0.15);
+    box-shadow: 0px 2px 11px 8px rgba(126, 126, 126, 0.15);
     background: white;
     animation: zoomIn 0.5s ease-in-out;
     -webkit-animation: zoomIn 0.5s ease-in-out;
@@ -542,7 +553,7 @@ body {
     min-height: 18.125rem;
   }
   .p-8rem {
-    padding: 4rem;
+    padding: 3rem;
   }
   .px-8rem {
     padding-right: 4rem;
@@ -550,6 +561,12 @@ body {
   }
   .bg-xs-lg-white {
     background-color: white;
+  }
+  .btn-hero {
+    width: 100%;
+  }
+  .border-radius-5625rem {
+    border-bottom-right-radius: 22.25rem;
   }
 }
 
@@ -559,7 +576,7 @@ body {
   }
   .navbar-collapse {
     position: absolute;
-    top: 6.716rem;
+    top: 6rem;
     right: 0;
     flex-basis: 30%;
     flex-grow: 0;
@@ -599,6 +616,12 @@ body {
   .bg-xs-lg-white {
     background-color: white;
   }
+  .btn-hero {
+    width: 100%;
+  }
+  .border-radius-5625rem {
+    border-bottom-right-radius: 19.25rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -625,6 +648,12 @@ body {
   }
   .bg-xs-lg-white {
     background-color: inherit;
+  }
+  .btn-hero {
+    width: auto;
+  }
+  .border-radius-5625rem {
+    border-bottom-right-radius: 56.25rem;
   }
 }
 

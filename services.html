@@ -88,9 +88,10 @@
               >
             </li>
           </ul>
-          <div class="vr d-lg-flex d-none align-self-center"></div>
+          <!-- Commented out untill further notice -->
+          <!-- <div class="vr d-lg-flex d-none align-self-center"></div> -->
           <!-- languages -->
-          <ul class="navbar-nav gap-3 flex-row">
+          <!-- <ul class="navbar-nav gap-3 flex-row">
             <li class="nav-item">
               <a class="nav-link text-uppercase" hreflang="index.html">CZ</a>
             </li>
@@ -102,7 +103,7 @@
             <li class="nav-item">
               <a class="nav-link text-uppercase" hreflang="services.html">FI</a>
             </li>
-          </ul>
+          </ul> -->
           <a
             href="#contacts"
             class="btn btn-link d-flex d-lg-none p-0 text-decoration-none subtitle"
@@ -119,8 +120,8 @@
     <main>
       <!-- Hero -->
       <section
-        id="hero2"
-        class="container-fluid bg-yoso-blue-100 hero-padding hero border-radius-5625rem"
+        id="heroServices"
+        class="container-fluid bg-yoso-blue-100 hero-padding border-radius-5625rem"
       >
         <div class="container">
           <div class="row">
@@ -180,7 +181,7 @@
           >
             <div class="card-body">
               <div class="d-flex mb-125rem txt-yoso-blue-500">
-                <h2 class="card-icon mb-0">
+                <h2 class="card-icon fs-6 mb-0">
                   <i class="fa-solid fa-arrows-to-eye"></i>
                 </h2>
                 <h2 class="card-title h4 mb-0 d-flex align-items-center">
@@ -456,143 +457,119 @@
             <h1 class="h3 text-white title-content-mb text-uppercase">
               Let's meet - contact us
             </h1>
-            <div class="row flex-column flex-lg-row gap-5">
-              <!-- contact form -->
-              <div class="col">
-                <h2 class="h5 text-uppercase text-white">
-                  We are ready to help
-                  <span class="h5 txt-gradient">your business grow</span>
-                </h2>
-                <h3 class="subtitle text-white opacity-08 mb-175rem">
-                  Let's collaborate and explore the possibilities. <br />
-                  Book a consultation.
-                </h3>
-                <form
-                  action="mailto:customerservice@yoso.fi?subject=Contact form"
-                  method="post"
-                  enctype="text/plain"
-                  class="d-flex flex-column gap-088rem"
-                >
-                  <div class="d-flex flex-column flex-lg-row gap-088rem">
-                    <!-- first name -->
-                    <div class="form-floating bg-yoso-blue-800 w-100">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="firstName"
-                        name="firstName"
-                        placeholder="First name"
-                      />
-                      <label for="firstName">First name</label>
-                    </div>
-                    <!-- last name -->
-                    <div class="form-floating bg-yoso-blue-800 w-100">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="lastName"
-                        name="lastName"
-                        placeholder="Last name"
-                      />
-                      <label for="lastName">Last name</label>
-                    </div>
-                  </div>
-                  <!-- email -->
-                  <div class="form-floating bg-yoso-blue-800">
-                    <input
-                      type="email"
-                      required
-                      class="form-control"
-                      id="email"
-                      name="email"
-                      placeholder="Email *"
-                    />
-                    <label for="email">Email *</label>
-                  </div>
-                  <!-- phone -->
-                  <div class="form-floating bg-yoso-blue-800">
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="phone"
-                      name="phone"
-                      placeholder="Phone number"
-                    />
-                    <label for="phone">Phone</label>
-                  </div>
-                  <!-- message -->
-                  <div class="form-floating bg-yoso-blue-800">
-                    <textarea
-                      class="form-control min-height-68rem"
-                      placeholder="Message"
-                      id="message"
-                      name="message"
-                      maxlength="5000"
-                    ></textarea>
-                    <label for="message">Message</label>
-                  </div>
-                  <!-- privacy checkbox -->
-                  <div class="form-check">
-                    <input
-                      class="form-check-input h2"
-                      type="checkbox"
-                      value=""
-                      id="privacyCheckbox"
-                      required
-                    />
-                    <label
-                      class="form-check-label paragraph text-white"
-                      for="privacyCheckbox"
-                    >
-                      I have read and agree to
-                      <a
-                        href="#"
-                        class="text-decoration-none text-white fw-semibold"
-                        >the Privacy Policy</a
-                      >
-                    </label>
-                    <div class="invalid-feedback">
-                      You must agree before submitting.
-                    </div>
-                  </div>
-                  <button
-                    type="submit"
-                    id="contact-button"
-                    class="btn btn-primary contact-button-gradient text-uppercase"
-                  >
-                    Send
-                  </button>
-                </form>
+            <h2 class="h5 text-uppercase text-white">
+              We are ready to help
+              <span class="h5 txt-gradient">your business grow</span>
+            </h2>
+            <h3 class="subtitle text-white opacity-08 mb-5">
+              Let's collaborate and explore the possibilities. <br />
+              <!-- Book a consultation. -->
+            </h3>
+            <div class="row">
+              <div class="col-6 gap-175rem text-white">
+                <p class="paragraph text-uppercase opacity-08 mb-2">email</p>
+                <p class="h5 mb-5">customerservice@yoso.fi​</p>
+                <p class="paragraph text-uppercase opacity-08 mb-2">address</p>
+                <p class="h5 mb-0">
+                  Yoso Oy <br />
+                  Säterintie 6, FI-37600 Valkeakoski
+                </p>
               </div>
-              <!-- company info -->
-              <div class="col">
-                <div class="d-flex flex-column gap-175rem">
-                  <div class="d-flex flex-column text-white gap-062rem">
-                    <p class="subtitle text-uppercase opacity-08 mb-0">email</p>
-                    <p class="h5 mb-0">customerservice@yoso.fi​</p>
-                  </div>
-                  <div class="d-flex flex-column text-white gap-062rem">
-                    <p class="subtitle text-uppercase opacity-08 mb-0">phone</p>
-                    <p class="h5 mb-0">+358111111111</p>
-                  </div>
-                  <div class="d-flex flex-column text-white gap-062rem">
-                    <p class="subtitle text-uppercase opacity-08 mb-0">
-                      address
-                    </p>
-                    <p class="h5 mb-0">
-                      Yoso Oy <br />Säterintie 6<br />
-                      FI-37600 Valkeakoski
-                    </p>
-                  </div>
-                  <div class="d-flex flex-column text-white gap-062rem">
-                    <p class="subtitle text-uppercase opacity-08 mb-0">
-                      business ID
-                    </p>
-                    <p class="h5 mb-0">200203-6</p>
-                  </div>
-                </div>
+              <div class="col-6 gap-175rem text-white">
+                <p class="paragraph text-uppercase opacity-08 mb-2">phone</p>
+                <p class="h5 mb-5">040 776 8972</p>
+
+                <p class="paragraph text-uppercase opacity-08 mb-2">
+                  business ID
+                </p>
+                <p class="h5 mb-0">200203-6</p>
               </div>
             </div>
+            <!-- Commented out untill further notice-->
+            <!-- <form
+                action="mailto:customerservice@yoso.fi?subject=Contact form"
+                method="post"
+                enctype="text/plain"
+                class="d-flex flex-column gap-088rem"
+              >
+
+              <div class="form-floating bg-yoso-blue-800">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                  />
+                  <label for="name">Name</label>
+                </div>
+
+                <div class="form-floating bg-yoso-blue-800">
+                  <input
+                    type="email"
+                    required
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Email *"
+                  />
+                  <label for="email">Email *</label>
+                </div>
+
+                <div class="form-floating bg-yoso-blue-800">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone number"
+                  />
+                  <label for="phone">Phone</label>
+                </div>
+
+                <div class="form-floating bg-yoso-blue-800">
+                  <textarea
+                    class="form-control min-height-68rem"
+                    placeholder="Message"
+                    id="message"
+                    name="message"
+                    maxlength="5000"
+                  ></textarea>
+                  <label for="message">Message</label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input h2"
+                    type="checkbox"
+                    value=""
+                    id="privacyCheckbox"
+                    required
+                  />
+                  <label
+                    class="form-check-label paragraph text-white"
+                    for="privacyCheckbox"
+                  >
+                    I have read and agree to
+                    <a
+                      href="#"
+                      class="text-decoration-none text-white fw-semibold"
+                      >the Privacy Policy</a
+                    >
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  id="contact-button"
+                  class="btn btn-primary contact-button-gradient text-uppercase"
+                >
+                  Send
+                </button>
+              </form> -->
+            <!-- </div> -->
           </div>
         </div>
       </section>
@@ -648,11 +625,12 @@
             &copy; <span class="currentYear"></span> | Yoso Oy. All rights
             reserved
           </p>
-          <a
+          <!-- Commented out untill further notice -->
+          <!-- <a
             href="#"
             class="col-auto paragraph txt-gray-200 text-decoration-none mb-0 footer-link"
             >Privacy Policy</a
-          >
+          > -->
         </div>
       </div>
     </footer>
@@ -668,7 +646,7 @@
       //Set navbar background to white and add box shadow once page is scrolled to hero page section
       function changeNavbarBackgroundOnScroll() {
         const navbar = document.getElementById("navbarWrapper");
-        const heroSection = document.querySelector(".hero");
+        const heroSection = document.querySelector("#heroServices");
 
         // Check if the navbar and hero section exist
         if (navbar && heroSection) {
