@@ -1,331 +1,671 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoso: Your IT-Solutions</title>
+    <link rel="icon" type="image/x-icon" href="images/yoso-symbol-blue.png" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yoso: Your IT-Solutions</title>
-  <link rel="icon" type="image/x-icon" href="images/yoso-symbol-blue.png">
-
-  <!-- Montserrat font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <!-- Bootstrap CSS-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!-- Fontawesome icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
 
-<body>
-  <!-- Navbar -->
-  <nav class="navbar sticky-top navbar-expand-lg border-shadow bg-white navbar-padding">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <div>
-        <a class="navbar-brand col-2" href="index.html">
-          <img src="images/yoso-wordmark-blue.png" alt="YosoLogo" class="d-inline-block align-text-top" width="150"
-            height="auto">
+  <body>
+    <!-- Navbar -->
+    <div
+      id="navbarWrapper"
+      class="bg-yoso-blue-100 w-100 sticky-top px-2 px-sm-0"
+    >
+      <nav
+        id="navbar"
+        class="navbar container navbar-expand-lg navbar-shadow justify-content-between flex-nowrap"
+      >
+        <a class="navbar-brand me-0 py-0 d-flex d-lg-none" href="index.html">
+          <img
+            src="images/yoso-wordmark-blue.png"
+            alt="YosoLogo"
+            width="150"
+            height="auto"
+          />
         </a>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse col-10 justify-content-between" id="navbar">
-        <ul class="navbar-nav my-2 my-lg-0 col-10 justify-content-end">
+        <!-- toggler button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar items -->
+        <div
+          class="collapse navbar-collapse bg-xs-lg-white align-items-end align-items-lg-center justify-content-between gap-3 gap-lg-0"
+          id="collapse"
+        >
+          <a class="navbar-brand me-0 py-0 d-none d-lg-flex" href="index.html">
+            <img
+              src="images/yoso-wordmark-blue.png"
+              alt="YosoLogo"
+              width="150"
+              height="auto"
+            />
+          </a>
+          <ul class="navbar-nav gap-3 gap-lg-5 align-items-end">
             <li class="nav-item">
-            <a class="nav-link text-uppercase" href="index.html">
-              <i class="fa-solid fa-house"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-uppercase" aria-current="page" href="services.html">our services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="about.html">about</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link text-uppercase" href="index.html#projects">projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="about.html#jobs">jobs</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#contacts">contacts</a>
-          </li>
-        </ul>
-        <div class="d-flex me-0 gap-2" href="#">
-          <img src="images/finnish-flag.png" alt="Finnish flag"
-            class="bg-muted object-fit-cover rounded border border-light-subtle flags-shadow pointer-on-hover" width="24px"
-            height="auto" />
-          <img src="images/czech-flag.png" alt="Czech flag"
-            class="bg-muted object-fit-cover rounded border border-light-subtle flags-shadow pointer-on-hover" width="24px"
-            height="auto" />
+              <a class="nav-link text-uppercase" href="index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="about.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-uppercase" href="services.html"
+                >services</a
+              >
+            </li>
+          </ul>
+          <div class="vr d-lg-flex d-none align-self-center"></div>
+          <!-- languages -->
+          <ul class="navbar-nav gap-3 flex-row">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" hreflang="index.html">CZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-uppercase" hreflang="about.html"
+                >EN</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" hreflang="services.html">FI</a>
+            </li>
+          </ul>
+          <a
+            href="#contacts"
+            class="btn btn-link d-flex d-lg-none p-0 text-decoration-none subtitle"
+            >Get in touch</a
+          >
+          <a
+            href="#contacts"
+            class="btn btn-primary btn-shadow d-none d-lg-flex text-decoration-none"
+            >Get in touch</a
+          >
         </div>
-      </div>
-  </nav>
-
-  <main>
-    <!-- Hero 2 -->
-    <section id="hero2"
-      class="container-fluid main-padding full-screen d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between align-items-center gap-5 bg-white">
-      <div class="col-12 col-lg-6">
-        <h1 class="fw-medium mb-5">
-          Solutions that are the key to your business success
-        </h1>
-        <h5>
-          Solutions that bring you competitive advantage, quality and satisfaction
-        </h5>
-        <div class="d-flex justify-content-end align-self-end me-5">
-          <a href="#contacts" class="bg-black text-white text-decoration-none fw-semibold py-2 px-3 mt-5 rounded-pill">Book a
-            demo</a>
-        </div>
-      </div>
-      <div class="col-12 col-lg-5 d-flex justify-content-center">
-        <img src="images/innovation.svg" alt="Services page hero image" width="90%" height="auto">
-      </div>
-    </section>
-    <!-- Intro Subpage -->
-    <section>
-      <div class="container-fluid main-padding d-flex flex-column justify-content-center gap-3 pt-5 pb-5">
-        <p class="fs-3 fw-semibold text-center">How can you improve your business processes with our solutions</p>
-        <div>
-          <p class="text-secondary fw-medium bg-white py-3 px-4 border-radius">You deserve quality solutions that match your needs and existing systems.</p>
-          <p class="fw-medium px-4">We can help you achieve that by doing the following</p>
-        </div>
-        <div class="d-flex flex-column-reverse flex-lg-column justify-content-between align-items-center gap-3">
-          <div class="col">
-            <img src="images/no-image.png" alt="Intro subpage image" width="100%" height="auto" class="object-fit-cover">
-          </div>
-          <div class="container-fluid d-flex flex-column gap-3">
-            <div class="row d-flex flex-column flex-lg-row gap-3">
-              <div class="col d-flex flex-column gap-3 card-with-shadow bg-white p-4 p-md-5">
-                <span class="fw-medium txt-yoso-blue">Analyzing</span>
-                <span class="">
-                  your current IT solutions and finding out how to enhance them.
-                </span>
-              </div>
-              <div class="col d-flex flex-column gap-3 card-with-shadow bg-white p-4 p-md-5">
-                <span class="fw-medium txt-yoso-blue">Understanding</span>
-                <span class="">
-                  your data and visual descriptions
-                  of your current and future situation, so you can see the changes and benefits.
-                </span>
-              </div>
-            </div>
-             <div class="row d-flex flex-column flex-lg-row gap-3">
-                <div class="col d-flex flex-column gap-3 card-with-shadow bg-white p-4 p-md-5">
-                  <span class="fw-medium txt-yoso-blue">Creating</span>
-                  <span class="">clear and visual descriptions of your current and future situation, so you can see
-                    changes and benefits.</span>
-                </div>
-        
-                <div class="col d-flex flex-column gap-3 card-with-shadow bg-white p-4 p-md-5">
-                  <span class="fw-medium txt-yoso-blue">Using</span>
-                  <span class="">
-                    industry-standard methods and tools, such as Archimate and UML, to ensure consistency,
-                    reliability, and compatibility of your solutions.
-                  </span>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Design and deliver -->
-    <section class="container-fluid main-padding d-flex flex-column pt-5 pb-5 gap-3 justify-content-center bg-white">
-      <div class="col">
-        <p class="fs-3 fw-semibold">How we design and deliver ICT solutions</p>
-      </div>
-      <p>Get ICT solutions that are functional, reliable, customized, and original. You deserve the best.</p>
-      <div class="col-12 col-lg-8 align-self-center"><img src="images/design-and-deliver.jpg" alt="Home page image" width="100%" height="auto" class="object-fit-cover"></div>
-      <!-- Cards -->
-      <div class="container-fluid d-flex flex-column gap-3 text-secondary">
-        <div class="row d-flex flex-column flex-lg-row gap-3">
-          <div class="card col border-0 text-secondary bg-muted border-radius p-3 p-md-5 px-xl-3 pointer-on-hover">
-            <div class="card-body">
-              <h5 class="card-title fw-semibold text-dark-emphasis mb-3 mb-md-4">Definition</h5>
-              <p class="card-text fs-6">You share your needs and challenges with us, using methods such as interviews, surveys,
-                and observations. We listen to you and understand you. We also agree on the scope, goals, and success
-                criteria of the project with you.
-              </p>
-            </div>
-          </div>
-          <div class="card col text-secondary border-muted border-radius border-shadow p-3 p-md-5 px-xl-3 pointer-on-hover">
-            <div class="card-body">
-              <h5 class="card-title fw-semibold text-dark-emphasis mb-3 mb-md-4">Testing</h5>
-              <p class="card-text">You see different ideas and prototypes for the solution, using methods such as
-                brainstorming, sketching,
-                wireframing, and user testing. You give us your feedback and preferences. We then choose the best solution
-                that meets
-                your requirements and expectations with you.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row d-flex flex-column flex-lg-row gap-3">
-          <div class="card col border-0 text-secondary border-muted border-radius border-shadow p-3 p-md-5 px-xl-3 pointer-on-hover">
-            <div class="card-body">
-              <h5 class="card-title fw-semibold text-dark-emphasis mb-3 mb-md-4">Implementation</h5>
-              <p class="card-text">You get the solution in a flexible way, using agile methods, such as Scrum or Kanban.
-                We deliver working software in short iterations. Throughout the process, we work with you and adapt to
-                your changes.
-              </p>
-            </div>
-          </div>
-          <div class="card col border-0 text-secondary bg-muted border-radius p-3 p-md-5 px-xl-3 pointer-on-hover">
-            <div class="card-body">
-              <h5 class="card-title fw-semibold text-dark-emphasis mb-3 mb-md-4">Maintenance</h5>
-              <p class="card-text">You enjoy the solution after it is deployed, using methods such as
-                analytics, bug tracking, and user support. We keep an eye on the solution and fix any issues. We also
-                provide updates and improvements to the solution, based on your changing needs and new opportunities.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Distribution -->
-    <section class="container-fluid main-padding bg-muted d-flex flex-column justify-content-center pt-5 pb-5 gap-3">
-      <p class="fs-3 text-uppercase fw-semibold">Distribution, production operations, and support
-      </p>
-  
-        <div class="col-6">
-          <img src="images/no-image.png" alt="Distribution image" width="70%" height="auto">
-        </div>
-        <div class="d-flex flex-column flex-xl-row gap-5 gap-lg-3 mt-4">
-        <div class="col card-with-shadow p-3 p-md-5 px-xl-3 bg-white d-flex flex-column gap-3 mx-0 mx-sm-5 mx-xl-0">
-            <p class="fw-semibold border-radius text-center distribution-title-hover">Operations and maintanance</p>
-            <ul class="distribution-text-hover d-flex flex-column gap-3">
-              <li>operations in high-availability mode</li>
-              <li>monitoring 24/7 and automated backup processes</li>
-              <li>security updates and bug fixes</li>
-              <li>documentation, maintenance guide and transition to your ICT department</li>
-            </ul>
-        </div>
-      
-         <div class="col card-with-shadow p-3 p-md-5 px-xl-3 bg-white d-flex flex-column gap-3 mx-0 mx-sm-5 mx-xl-0">
-            <p class="fw-semibold border-radius text-center distribution-title-hover">Environments</p>
-            <ul class="distribution-text-hover d-flex flex-column gap-3">
-              <li>our solutions can be operated in private infrastructure, public cloud, or hybrid mode</li>
-              <li>deployment processes are automated</li>
-              <li>we prefer making solutions without vendor lock-in</li>
-            </ul>  
-          </div>
-      
-           <div class="col card-with-shadow p-3 p-md-5 px-xl-3 bg-white d-flex flex-column gap-3 mx-0 mx-sm-5 mx-xl-0">
-            <p class="fw-semibold border-radius text-center distribution-title-hover">Security</p>
-              <ul class="distribution-text-hover d-flex flex-column gap-3">
-               <li>we apply OWASP Application Security Verification Standard to our solutions</li>
-                <li>project is developed in accordance with your security policies and based on the current
-                state-of-the-art knowledge</li>
-                <li>for critical projects or projects governing sensitive data, we recommend performing external security
-                audit</li>
-              </ul>
-          </div>
-      </div>
-    </section>
-
-    <!-- Technologies -->
-    <section class="container-fluid main-padding bg-white d-flex flex-column justify-content-center pt-5 pb-5 gap-3">
-      <p class="fs-3 text-uppercase fw-semibold">Technologies
-      </p>
-      <div class="d-flex flex-column gap-3">
-        <div class="col-12 col-lg-4">
-          <img src="images/no-image.png" alt="Technologies image" width="70%" height="auto">
-        </div> 
-        <!-- Cards -->
-        <div class="d-flex flex-column flex-lg-row gap-3">
-          <div class="card-with-shadow bg-muted card col border-0 p-3 p-md-5 px-lg-3">
-            <div class="card-body">
-              <h6 class="card-title fw-semibold mb-3 mb-md-4">Java Development</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nesciunt impedit porro
-                illum repellendus, repellat, mollitia vitae voluptatibus consequuntur, minima ipsum ab! Assumenda nobis
-                nesciunt dolor rerum perspiciatis perferendis voluptates.
-              </p>
-            </div>
-          </div>
-          <div class="card-with-shadow bg-muted card col border-0 p-3 p-md-5 px-lg-3">
-            <div class="card-body">
-              <h6 class="card-title fw-semibold mb-3 mb-md-4">JavaScript Development</h6>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore obcaecati, vitae
-                quo illo alias sunt laudantium iure assumenda, culpa, laboriosam magnam repellat. Eius quis dicta
-                distinctio non in, vero assumenda</p>
-            </div>
-          </div>
-          <div class="card-with-shadow bg-muted card col border-0 p-3 p-md-5 px-lg-3">
-            <div class="card-body">
-              <h6 class="card-title fw-semibold mb-3 mb-md-4">Python Development</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perspiciatis,
-                asperiores labore unde quod est aperiam numquam, quo praesentium vero exercitationem blanditiis nam ad
-                harum beatae tempora qui accusantium pariatur!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Contact us -->
-    <section id="contacts" class="pt-2">
-      <div class="container-fluid secondary-padding yoso-blue text-white">
-        <p class="fs-3 text-uppercase fw-semibold mb-0">Let's meet - contact us
-        </p>
-        <hr>
-      </div>
-      <div
-        class="container-fluid main-padding d-flex flex-column flex-lg-row justify-content-between align-items-center yoso-blue gap-4 gap-lg-0">
-        <div class="pt-5 pb-lg-5 col-12 col-lg-5 d-flex flex-column gap-2 text-white text-center">
-          <h3 class="text-uppercase">We are ready to help your business grow</h3>
-          <p>Let's collaborate and explore the possibilities. Schedule a meeting for analysis.
-          </p>
-        </div>
-        <!-- Form -->
-        <form class="d-flex flex-column gap-3 col-12 col-lg-6 pb-5 pt-lg-5" action="mailto:moi@yoso.fi?subject=Contact form"
-          method="post" enctype="text/plain">
-          <div class="col-auto d-flex gap-3">
-            <div class="col">
-              <label for="name" class="visually-hidden">Name</label>
-              <input type="text" required class="form-control" id="name" placeholder="Name" style="font-style: italic;">
-            </div>
-            <div class="col">
-              <label for="lastName" class="visually-hidden">Last name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="Last name" style="font-style: italic;">
-            </div>
-          </div>
-          <div class="col">
-            <label for="email" class="visually-hidden">email</label>
-            <input type="email" class="form-control" id="email" placeholder="email" style="font-style: italic;">
-          </div>
-          <div class="col-auto d-flex align-self-center">
-            <button type="submit" class="btn bg-white text-uppercase text-secondary fw-semibold rounded-pill">Book a
-              demo</button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer class="container-fluid main-padding bg-dark opacity-50 fw-medium">
-    <div class="d-flex flex-column justify-content-center gap-3" style="color:#E5E5E5;">
-      <div>
-        <h3 class="text-uppercase">YOSO OY</h3>
-        <h6 class="">Business ID 200203-6</h6>
-      </div>
-      <p class="text-uppercase m-0">&copy; 2023 | all rights reserved
-      </p>
+      </nav>
     </div>
-  </footer>
-  <!-- Boostrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
+    <main>
+      <!-- Hero -->
+      <section
+        id="hero2"
+        class="container-fluid bg-yoso-blue-100 hero-padding hero border-radius-5625rem"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1
+                class="hero-title-semibold title-subtitle-mb mt-0 txt-yoso-blue-800"
+              >
+                Solutions that are the key to your business success
+              </h1>
+              <h2
+                class="subtitle txt-gray-600 text-uppercase mb-0 txt-yoso-blue-500"
+              >
+                solutions that bring you competitive advantage, quality and
+                satisfaction
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Intro Subpage -->
+      <section class="container py-5rem">
+        <h1 class="h3 txt-gray-800 title-subtitle-mb text-uppercase">
+          How can you improve your business processes with our solutions
+        </h1>
+        <h2 class="subtitle txt-gray-600 text-uppercase">
+          You deserve quality solutions that match your needs and existing
+          systems.
+        </h2>
+        <h2 class="subtitle txt-gray-600 title-content-mb text-uppercase">
+          We can help you achieve that by doing the following
+        </h2>
+        <!-- first row -->
+        <div
+          class="row flex-column flex-lg-row gap-3 px-xs-075rem mb-3 justify-content-lg-center"
+        >
+          <!-- analyzing card -->
+          <div
+            class="card col card-with-icon mx-auto mx-lg-0 max-width-3125rem"
+          >
+            <div class="card-body">
+              <div class="d-flex mb-125rem txt-yoso-blue-500">
+                <h2 class="card-icon mb-0">
+                  <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </h2>
+                <h2 class="card-title h4 mb-0 d-flex align-items-center">
+                  Analyzing
+                </h2>
+              </div>
+              <p class="card-text paragraph txt-gray-800">
+                your current IT solutions and finding out how to enhance them.
+              </p>
+            </div>
+          </div>
+          <!-- creating card -->
+          <div
+            class="card col card-with-icon mx-auto mx-lg-0 max-width-3125rem"
+          >
+            <div class="card-body">
+              <div class="d-flex mb-125rem txt-yoso-blue-500">
+                <h2 class="card-icon mb-0">
+                  <i class="fa-solid fa-arrows-to-eye"></i>
+                </h2>
+                <h2 class="card-title h4 mb-0 d-flex align-items-center">
+                  Creating
+                </h2>
+              </div>
+              <p class="card-text paragraph txt-gray-800">
+                clear and visual descriptions of your current and future
+                situation, so you can see changes and benefits.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- second row -->
+        <div
+          class="row flex-column flex-lg-row gap-3 px-xs-075rem justify-content-lg-center"
+        >
+          <!-- understanding card -->
+          <div
+            class="card col card-with-icon mx-auto mx-lg-0 max-width-3125rem"
+          >
+            <div class="card-body">
+              <div class="d-flex mb-125rem txt-yoso-blue-500">
+                <h2 class="card-icon mb-0">
+                  <i class="fa-solid fa-puzzle-piece"></i>
+                </h2>
+                <h2 class="card-title h4 mb-0 d-flex align-items-center">
+                  Understanding
+                </h2>
+              </div>
+              <p class="card-text paragraph txt-gray-800">
+                your data and visual descriptions of your current and future
+                situation, so you can see the changes and benefits.
+              </p>
+            </div>
+          </div>
+          <!-- using card -->
+          <div
+            class="card col card-with-icon mx-auto mx-lg-0 max-width-3125rem"
+          >
+            <div class="card-body">
+              <div class="d-flex mb-125rem txt-yoso-blue-500">
+                <h2 class="card-icon mb-0">
+                  <i class="fa-solid fa-code-merge"></i>
+                </h2>
+                <h2 class="card-title h4 mb-0 d-flex align-items-center">
+                  Using
+                </h2>
+              </div>
+              <p class="card-text paragraph txt-gray-800">
+                industry-standard methods and tools, such as Archimate and UML,
+                to ensure consistency, reliability, and compatibility of your
+                solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Design and deliver -->
+      <section
+        class="container-fluid py-5rem bg-yoso-blue-50 border-radius-bottom-right-625rem"
+      >
+        <div class="container">
+          <h1 class="h3 txt-yoso-blue-800 title-subtitle-mb text-uppercase">
+            How we design and deliver ICT solutions
+          </h1>
+          <h2
+            class="subtitle txt-yoso-blue-600 title-content-mb text-uppercase"
+          >
+            Get ICT solutions that are functional, reliable, customized, and
+            original. You deserve the best.
+          </h2>
+          <!-- first row -->
+          <div
+            class="row flex-column flex-lg-row gap-3 px-xs-075rem mb-3 justify-content-lg-center"
+          >
+            <!-- definition card -->
+            <div class="card col card-with-icon mx-auto mx-lg-0">
+              <div class="card-body">
+                <h2 class="card-title h4 mb-125rem txt-yoso-blue-800">
+                  Definition
+                </h2>
+                <p class="card-text paragraph txt-gray-800">
+                  You share your needs and challenges with us, using methods
+                  such as interviews, surveys, and observations. We listen to
+                  you and understand you. We also agree on the scope, goals, and
+                  success criteria of the project with you.
+                </p>
+              </div>
+            </div>
+            <!-- testing card -->
+            <div class="card col card-with-icon mx-auto mx-lg-0">
+              <div class="card-body">
+                <h2 class="card-title h4 mb-125rem txt-yoso-blue-800">
+                  Testing
+                </h2>
+                <p class="card-text paragraph txt-gray-800">
+                  You see different ideas and prototypes for the solution, using
+                  methods such as brainstorming, sketching, wireframing, and
+                  user testing. You give us your feedback and preferences. We
+                  then choose the best solution that meets your requirements and
+                  expectations with you.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- second row -->
+          <div
+            class="row flex-column flex-lg-row gap-3 px-xs-075rem justify-content-lg-center"
+          >
+            <!-- implementation card -->
+            <div class="card col card-with-icon mx-auto mx-lg-0">
+              <div class="card-body">
+                <h2 class="card-title h4 mb-125rem txt-yoso-blue-800">
+                  Implementation
+                </h2>
+                <p class="card-text paragraph txt-gray-800">
+                  You get the solution in a flexible way, using agile methods,
+                  such as Scrum or Kanban. We deliver working software in short
+                  iterations. Throughout the process, we work with you and adapt
+                  to your changes.
+                </p>
+              </div>
+            </div>
+            <!-- maintenance card -->
+            <div class="card col card-with-icon mx-auto mx-lg-0">
+              <div class="card-body">
+                <h2 class="card-title h4 mb-125rem txt-yoso-blue-800">
+                  Maintenance
+                </h2>
+                <p class="card-text paragraph txt-gray-800">
+                  You enjoy the solution after it is deployed, using methods
+                  such as analytics, bug tracking, and user support. We keep an
+                  eye on the solution and fix any issues. We also provide
+                  updates and improvements to the solution, based on your
+                  changing needs and new opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Distribution -->
+      <section class="container py-5rem">
+        <h1 class="h3 txt-gray-800 title-content-mb text-uppercase">
+          Distribution, production operations, and support
+        </h1>
+        <div class="row flex-column flex-lg-row gap-3 px-xs-075rem">
+          <!--  operations and maintanance card-->
+          <div class="card col card-with-icon mx-auto mx-lg-0">
+            <div class="card-body">
+              <h2 class="card-title h4 mb-125rem txt-yoso-blue-600">
+                Operations and maintanance
+              </h2>
+              <ul class="card-text paragraph txt-gray-800">
+                <li>operations in high-availability mode</li>
+                <li>monitoring 24/7 and automated backup processes</li>
+                <li>security updates and bug fixes</li>
+                <li>
+                  documentation, maintenance guide and transition to your ICT
+                  department
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- environments card -->
+          <div class="card col card-with-icon mx-auto mx-lg-0">
+            <div class="card-body">
+              <h2 class="card-title h4 mb-125rem txt-yoso-blue-600">
+                Environments
+              </h2>
+              <ul class="card-text paragraph txt-gray-800">
+                <li>
+                  our solutions can be operated in private infrastructure,
+                  public cloud, or hybrid mode
+                </li>
+                <li>deployment processes are automated</li>
+                <li>we prefer making solutions without vendor lock-in</li>
+              </ul>
+            </div>
+          </div>
+          <!-- security card -->
+          <div class="card col card-with-icon mx-auto mx-lg-0">
+            <div class="card-body">
+              <h2 class="card-title h4 mb-125rem txt-yoso-blue-600">
+                Security
+              </h2>
+              <ul class="card-text paragraph txt-gray-800">
+                <li>operations in high-availability mode</li>
+                <li>monitoring 24/7 and automated backup processes</li>
+                <li>security updates and bug fixes</li>
+                <li>
+                  documentation, maintenance guide and transition to your ICT
+                  department
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Technologies -->
+      <section
+        class="container-fluid py-5rem bg-yoso-blue-100 border-radius-top-625rem"
+      >
+        <div class="container">
+          <h1 class="h3 txt-yoso-blue-800 title-content-mb text-uppercase">
+            Technologies
+          </h1>
+          <!-- cards -->
+          <div
+            class="row flex-column flex-xxl-row justify-content-xxl-around gap-5 gap-xxl-0 mb-175rem"
+          >
+            <!-- Java-->
+            <div class="col card-with-rectangle-wrapper mx-auto mx-xxl-0">
+              <div class="card-with-rectangle card">
+                <div class="card-body">
+                  <h3 class="card-title h4 txt-yoso-blue-500">
+                    Java Development
+                  </h3>
+                  <p class="card-text paragraph txt-gray-800">
+                    Java is a widely used programming language that enables
+                    versatile and platform-independent applications. Its
+                    strength lies in its reliability, security, and scalability,
+                    making it an ideal language for enterprise applications.
+                  </p>
+                </div>
+              </div>
+              <div class="card-rectangle bg-yoso-blue-50"></div>
+            </div>
+            <!-- JavaScript -->
+            <div class="col card-with-rectangle-wrapper mx-auto mx-xxl-0">
+              <div class="card-with-rectangle card">
+                <div class="card-body">
+                  <h3 class="card-title h4 txt-yoso-blue-500">
+                    JavaScript Development
+                  </h3>
+                  <p class="card-text paragraph txt-gray-800">
+                    JavaScript is a dynamic scripting language essential for the
+                    interactivity of modern websites. It enables the creation of
+                    user-friendly interfaces and is a core part of web
+                    development.
+                  </p>
+                </div>
+              </div>
+              <div class="card-rectangle bg-yoso-blue-600"></div>
+            </div>
+            <!-- Python -->
+            <div class="col card-with-rectangle-wrapper mx-auto mx-xxl-0">
+              <div class="card-with-rectangle card">
+                <div class="card-body">
+                  <h3 class="card-title h4 txt-yoso-blue-500">
+                    Python Development
+                  </h3>
+                  <p class="card-text paragraph txt-gray-800">
+                    Python is a popular programming language known for its clear
+                    syntax and efficiency. It is well-suited for web
+                    development, data processing, and artificial intelligence
+                    applications.
+                  </p>
+                </div>
+              </div>
+              <div class="card-rectangle bg-yoso-blue-800"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact us-->
+      <section id="contacts" class="container-fluid bg-yoso-blue-100 px-0">
+        <div
+          class="container-fluid py-5rem bg-yoso-blue-800 border-bottom-gray-200 border-radius-top-625rem"
+        >
+          <div class="container">
+            <h1 class="h3 text-white title-content-mb text-uppercase">
+              Let's meet - contact us
+            </h1>
+            <div class="row flex-column flex-lg-row gap-5">
+              <!-- contact form -->
+              <div class="col">
+                <h2 class="h5 text-uppercase text-white">
+                  We are ready to help
+                  <span class="h5 txt-gradient">your business grow</span>
+                </h2>
+                <h3 class="subtitle text-white opacity-08 mb-175rem">
+                  Let's collaborate and explore the possibilities. <br />
+                  Book a consultation.
+                </h3>
+                <form
+                  action="mailto:customerservice@yoso.fi?subject=Contact form"
+                  method="post"
+                  enctype="text/plain"
+                  class="d-flex flex-column gap-088rem"
+                >
+                  <div class="d-flex flex-column flex-lg-row gap-088rem">
+                    <!-- first name -->
+                    <div class="form-floating bg-yoso-blue-800 w-100">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="First name"
+                      />
+                      <label for="firstName">First name</label>
+                    </div>
+                    <!-- last name -->
+                    <div class="form-floating bg-yoso-blue-800 w-100">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Last name"
+                      />
+                      <label for="lastName">Last name</label>
+                    </div>
+                  </div>
+                  <!-- email -->
+                  <div class="form-floating bg-yoso-blue-800">
+                    <input
+                      type="email"
+                      required
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Email *"
+                    />
+                    <label for="email">Email *</label>
+                  </div>
+                  <!-- phone -->
+                  <div class="form-floating bg-yoso-blue-800">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      placeholder="Phone number"
+                    />
+                    <label for="phone">Phone</label>
+                  </div>
+                  <!-- message -->
+                  <div class="form-floating bg-yoso-blue-800">
+                    <textarea
+                      class="form-control min-height-68rem"
+                      placeholder="Message"
+                      id="message"
+                      name="message"
+                      maxlength="5000"
+                    ></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                  <button
+                    type="submit"
+                    id="contact-button"
+                    class="btn btn-primary contact-button-gradient text-uppercase"
+                  >
+                    Send
+                  </button>
+                </form>
+              </div>
+              <!-- company info -->
+              <div class="col">
+                <div class="d-flex flex-column gap-175rem">
+                  <div class="d-flex flex-column text-white gap-062rem">
+                    <p class="subtitle text-uppercase opacity-08 mb-0">email</p>
+                    <p class="h5 mb-0">customerservice@yoso.fi​</p>
+                  </div>
+                  <div class="d-flex flex-column text-white gap-062rem">
+                    <p class="subtitle text-uppercase opacity-08 mb-0">phone</p>
+                    <p class="h5 mb-0">+358111111111</p>
+                  </div>
+                  <div class="d-flex flex-column text-white gap-062rem">
+                    <p class="subtitle text-uppercase opacity-08 mb-0">
+                      address
+                    </p>
+                    <p class="h5 mb-0">
+                      Yoso Oy <br />Säterintie 6<br />
+                      FI-37600 Valkeakoski
+                    </p>
+                  </div>
+                  <div class="d-flex flex-column text-white gap-062rem">
+                    <p class="subtitle text-uppercase opacity-08 mb-0">
+                      business ID
+                    </p>
+                    <p class="h5 mb-0">200203-6</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      id="footer"
+      class="container-fluid py-25rem bg-yoso-blue-800 txt-gray-200"
+    >
+      <div class="container">
+        <div class="row gap-5rem">
+          <div class="col-auto d-flex flex-column gap-062rem">
+            <h1 class="h5 text-white mb-0">Czech Republic</h1>
+            <p class="details mb-0">
+              Yoso Czech s.r.o.<br />
+              Skrétova 475/83 <br />
+              301 00 Pilsen
+            </p>
+            <p class="details mb-0">czech@yoso.fi</p>
+            <p class="details mb-0">Business ID: 01511211</p>
+          </div>
+          <div class="col-auto d-flex flex-column gap-062rem">
+            <h1 class="h5 text-white mb-0">Finland</h1>
+            <p class="details mb-0">
+              Yoso Oy<br />
+              Säterintie 6 <br />
+              FI-37600 Valkeakoski
+            </p>
+            <p class="details mb-0">customerservice@yoso.fi</p>
+            <p class="details mb-0">Business ID: 200203-6</p>
+          </div>
+          <div class="col-auto d-flex flex-column gap-062rem">
+            <h1 class="h5 text-white mb-0">Menu</h1>
+            <a
+              href="index.html"
+              class="details txt-gray-200 text-decoration-none mb-0 footer-link"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="details txt-gray-200 text-decoration-none mb-0 footer-link"
+              >About</a
+            >
+            <a
+              href="services.html"
+              class="details active txt-gray-200 text-decoration-none mb-0 footer-link"
+              >Services</a
+            >
+          </div>
+        </div>
+        <hr class="txt-gray-200 my-2rem" />
+        <div class="row gap-375rem justify-content-center">
+          <p class="col-auto paragraph mb-0">
+            &copy; <span class="currentYear"></span> | Yoso Oy. All rights
+            reserved
+          </p>
+          <a
+            href="#"
+            class="col-auto paragraph txt-gray-200 text-decoration-none mb-0 footer-link"
+            >Privacy Policy</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+    <script>
+      //Set navbar background to white and add box shadow once page is scrolled to hero page section
+      function changeNavbarBackgroundOnScroll() {
+        const navbar = document.getElementById("navbarWrapper");
+        const heroSection = document.querySelector(".hero");
 
+        // Check if the navbar and hero section exist
+        if (navbar && heroSection) {
+          window.addEventListener("scroll", function () {
+            // Get the top offset of the hero section
+            const heroTopOffset = heroSection.getBoundingClientRect().top;
+            // Check if the top of the page has passed the hero section
+            if (heroTopOffset <= 0) {
+              // If passed, change navbar background color, and set box shadow
+              navbar.style.backgroundColor = "white";
+              navbar.style.boxShadow =
+                "0px 10px 16px 0px rgba(151, 162, 177, 0.1)";
+            } else {
+              // If not passed, revert to default styles
+              navbar.style.backgroundColor = "";
+              navbar.style.boxShadow = "";
+            }
+          });
+        }
+      }
+      changeNavbarBackgroundOnScroll();
+    </script>
+  </body>
 </html>
