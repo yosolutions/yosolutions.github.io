@@ -452,6 +452,17 @@ body {
 #message {
   min-height: 6.8rem;
 }
+/* checkbox */
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-left: 0;
+}
+.form-check .form-check-input {
+  margin-left: 0;
+  background-color: rgba(255, 255, 255, 0.03);
+}
 /* button */
 #contact-button {
   min-height: 3.625rem;

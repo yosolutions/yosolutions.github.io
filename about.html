@@ -312,6 +312,30 @@
                   ></textarea>
                   <label for="message">Message</label>
                 </div>
+                <!-- privacy checkbox -->
+                <div class="form-check">
+                  <input
+                    class="form-check-input h2"
+                    type="checkbox"
+                    value=""
+                    id="privacyCheckbox"
+                    required
+                  />
+                  <label
+                    class="form-check-label paragraph text-white"
+                    for="privacyCheckbox"
+                  >
+                    I have read and agree to
+                    <a
+                      href="#"
+                      class="text-decoration-none text-white fw-semibold"
+                      >the Privacy Policy</a
+                    >
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
                 <button
                   type="submit"
                   id="contact-button"
