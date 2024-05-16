@@ -57,7 +57,7 @@
   --bs-navbar-toggler-border-color: var(--gray-200);
   --bs-navbar-toggler-border-radius: 0.8rem;
   --bs-navbar-toggler-focus-width: 0;
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!Font Awesome Pro 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM64 248c0-13.3 10.7-24 24-24H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H88c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z'/%3E%3C/svg%3E");
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z'/%3E%3C/svg%3E");
   background-color: inherit;
 }
 
@@ -119,6 +119,8 @@
   --bs-btn-active-color: var(--yoso-blue-600);
   --bs-btn-box-shadow: none;
   --bs-btn-focus-shadow-rgb: none;
+  --bs-btn-padding-x: 0;
+  --bs-btn-padding-y: 0;
 }
 .btn-primary {
   --bs-btn-bg: var(--yoso-blue-500);
@@ -276,44 +278,45 @@ body {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
 }
-.py-5rem {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-.p-8rem {
-  padding: 8rem;
-}
-.px-8rem {
-  padding-right: 8rem;
-  padding-left: 8rem;
-}
-.py-25rem {
+.paddingy-1 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-.mb-125rem {
+.paddingy-2 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.paddingx-3 {
+  padding-right: 8rem;
+  padding-left: 8rem;
+}
+.padding-3 {
+  padding: 8rem;
+}
+.marginb-1 {
   margin-bottom: 1.25rem;
 }
-.mb-175rem {
+.marginb-2 {
   margin-bottom: 1.75rem;
 }
-.my-2rem {
+.marginy-3 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.gap-062rem {
+
+.space-1 {
   gap: 0.62rem;
 }
-.gap-088rem {
+.space-2 {
   gap: 0.88rem;
 }
-.gap-175rem {
+.space-3 {
   gap: 1.75rem;
 }
-.gap-375rem {
+.space-4 {
   gap: 3.75rem;
 }
-.gap-5rem {
+.space-5 {
   gap: 5rem;
 }
 
@@ -323,16 +326,16 @@ body {
 }
 
 /* border radius */
-.border-radius-625rem {
+.border-radius-1 {
   border-radius: 6.25rem 6.25rem 6.25rem 0rem;
 }
-.border-radius-top-625rem {
+.border-radius-top-1 {
   border-radius: 6.25rem 6.25rem 0rem 0rem;
 }
-.border-radius-bottom-right-625rem {
+.border-radius-bottom-right-1 {
   border-radius: 6.25rem 6.25rem 6.25rem 0rem;
 }
-.border-radius-bottom-left-625rem {
+.border-radius-bottom-left-1 {
   border-radius: 6.25rem 6.25rem 0 6.25rem;
 }
 .border-radius-5625rem {
@@ -344,6 +347,10 @@ body {
 }
 .flex-2 {
   flex: 2;
+}
+.hero-img {
+  width: 100%;
+  height: auto;
 }
 
 /* cards */
@@ -366,7 +373,7 @@ body {
 .card-with-icon > .card-body {
   padding: 0;
 }
-.card-with-icon.max-width-3125rem {
+.card-with-icon.max-width-1 {
   max-width: 31.25rem;
 }
 .card-with-icon > .card-body > .card-text li {
@@ -426,6 +433,11 @@ body {
   flex-direction: row;
 }
 
+.navbar-scrolled {
+  background-color: white;
+  box-shadow: 0px 10px 16px 0px rgba(151, 162, 177, 0.1);
+}
+
 /* contact form */
 /* form input */
 .form-control {
@@ -464,7 +476,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 /* textarea */
-#message {
+.form-floating > .form-control.message {
   min-height: 6.8rem;
 }
 /* checkbox */
@@ -479,7 +491,7 @@ body {
   background-color: rgba(255, 255, 255, 0.03);
 }
 /* button */
-#contact-button {
+.contact-button {
   min-height: 3.625rem;
   border-radius: 0.3125rem;
   font-weight: 600;
@@ -504,6 +516,16 @@ body {
 }
 
 /* media queries */
+/* navbar-collapse animation only for up to lg screen sizes and users who have motion preference 'no-preference' */
+@media (prefers-reduced-motion: no-preference) and (max-width: 767px),
+  (prefers-reduced-motion: no-preference) and (min-width: 768px) {
+  .navbar-collapse {
+    animation: zoomIn 0.5s ease-in-out;
+    -webkit-animation: zoomIn 0.5s ease-in-out;
+    -moz-animation: zoomIn 0.5s ease-in-out;
+  }
+}
+
 @media screen and (max-width: 767px) {
   :root {
     font-size: 12px;
@@ -521,23 +543,20 @@ body {
     border: 1px solid var(--gray-200);
     box-shadow: 0px 2px 11px 8px rgba(126, 126, 126, 0.15);
     background: white;
-    animation: zoomIn 0.5s ease-in-out;
-    -webkit-animation: zoomIn 0.5s ease-in-out;
-    -moz-animation: zoomIn 0.5s ease-in-out;
   }
   .hero-title-semibold {
     font-size: 3rem;
     font-weight: 700;
     line-height: 130.7%;
   }
-  .px-xs-075rem {
+  .paddingx-xs-1 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
-  .gap-5rem {
+  .space-5 {
     gap: 2.5rem;
   }
-  .gap-375rem {
+  .space-4 {
     gap: 1.875rem;
   }
   .card-with-rectangle-wrapper {
@@ -552,10 +571,10 @@ body {
     width: 20rem;
     min-height: 18.125rem;
   }
-  .p-8rem {
+  .padding-3 {
     padding: 3rem;
   }
-  .px-8rem {
+  .paddingx-3 {
     padding-right: 4rem;
     padding-left: 4rem;
   }
@@ -585,10 +604,7 @@ body {
     flex-direction: column;
     border-radius: 1.875rem;
     border: 1px solid var(--gray-200);
-    box-shadow: 0px 2px 11px 8px rgba(210, 215, 222, 0.15);
-    animation: zoomIn 0.5s ease-in-out;
-    -webkit-animation: zoomIn 0.5s ease-in-out;
-    -moz-animation: zoomIn 0.5s ease-in-out;
+    box-shadow: 0px 2px 11px 8px rgba(126, 126, 126, 0.15);
   }
   .hero-title-semibold {
     font-size: 3rem;
@@ -606,10 +622,10 @@ body {
     width: 40rem;
     min-height: 13.25rem;
   }
-  .p-8rem {
+  .padding-3 {
     padding: 5rem;
   }
-  .px-8rem {
+  .paddingx-3 {
     padding-right: 5rem;
     padding-left: 5rem;
   }

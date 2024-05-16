@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yoso: Your IT-Solutions</title>
-    <link rel="icon" type="image/x-icon" href="images/yoso-symbol-blue.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoso: Your IT Solutions</title>
+    <link rel="icon" type="image/x-icon" href="images/yoso-symbol-blue.png">
 
     <!-- Poppins font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-    />
+    >
     <!-- Bootstrap CSS-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css""
+    rel="stylesheet">
     <!-- Fontawesome icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
@@ -42,10 +34,10 @@
         <a class="navbar-brand me-0 py-0 d-flex d-lg-none" href="index.html">
           <img
             src="images/yoso-wordmark-blue.png"
-            alt="YosoLogo"
+            alt="Yoso logo"
             width="150"
-            height="auto"
-          />
+            height="48"
+          >
         </a>
         <!-- toggler button -->
         <button
@@ -69,8 +61,8 @@
               src="images/yoso-wordmark-blue.png"
               alt="YosoLogo"
               width="150"
-              height="auto"
-            />
+              height="48"
+            >
           </a>
           <ul class="navbar-nav gap-3 gap-lg-5 align-items-start">
             <li class="nav-item">
@@ -105,12 +97,8 @@
           </ul> -->
           <a
             href="#contacts"
-            class="btn btn-link d-flex d-lg-none p-0 text-decoration-none subtitle"
-            >Get in touch</a
-          >
-          <a
-            href="#contacts"
-            class="btn btn-primary btn-shadow d-none d-lg-flex text-decoration-none"
+            id="navbarBtn"
+            class="btn btn-primary btn-shadow text-decoration-none"
             >Get in touch</a
           >
         </div>
@@ -142,25 +130,25 @@
             class="col-12 col-md-8 col-lg-5 mx-auto mx-lg-0 d-flex justify-content-center"
           >
             <img
-              src="images/hero1.jpg"
-              alt="Home page image"
-              width="90%"
-              height="auto"
-              class="object-fit-contain"
-            />
+              src="images/globe.jpg"
+              alt="Blue globe"
+              width="400"
+              height="400"
+              class="object-fit-contain hero-img"
+            >
           </div>
         </div>
       </section>
       <!-- Benefits -->
-      <section class="container py-5rem">
+      <section class="container paddingy-2">
         <h1 class="h3 txt-gray-800 title-content-mb text-uppercase">
           Discover the power of your business with us
         </h1>
-        <div class="row flex-column flex-lg-row gap-3 px-xs-075rem">
+        <div class="row flex-column flex-lg-row gap-3 paddingx-xs-1">
           <!-- Flexibility and Innovation card -->
           <div class="card col card-with-icon mx-auto mx-lg-0">
             <div class="card-body">
-              <div class="d-flex mb-125rem txt-yoso-blue-800">
+              <div class="d-flex marginb-1 txt-yoso-blue-800">
                 <h2 class="card-icon mb-0">
                   <i class="fa-solid fa-lightbulb"></i>
                 </h2>
@@ -178,7 +166,7 @@
           <!-- Scalability and Performance Optimization card-->
           <div class="card col card-with-icon mx-auto mx-lg-0">
             <div class="card-body">
-              <div class="d-flex mb-125rem txt-yoso-blue-800">
+              <div class="d-flex marginb-1 txt-yoso-blue-800">
                 <h2 class="card-icon mb-0">
                   <i class="fa-solid fa-chart-line"></i>
                 </h2>
@@ -196,7 +184,7 @@
           <!-- Reliability and Security -->
           <div class="card col card-with-icon mx-auto mx-lg-0">
             <div class="card-body">
-              <div class="d-flex mb-125rem txt-yoso-blue-800">
+              <div class="d-flex marginb-1 txt-yoso-blue-800">
                 <h2 class="card-icon mb-0">
                   <i class="fa-solid fa-gears"></i>
                 </h2>
@@ -215,7 +203,7 @@
       </section>
       <!-- Services -->
       <section
-        class="container-fluid py-5rem bg-yoso-blue-500 border-radius-625rem"
+        class="container-fluid paddingy-2 bg-yoso-blue-500 border-radius-1"
       >
         <div class="container">
           <h1 class="h3 txt-yoso-blue-800 title-content-mb text-uppercase">
@@ -230,7 +218,7 @@
           </h2>
           <!-- cards -->
           <div
-            class="row flex-column flex-xxl-row justify-content-xxl-around gap-5 gap-xxl-0 mb-175rem"
+            class="row flex-column flex-xxl-row justify-content-xxl-around gap-5 gap-xxl-0 marginb-2"
           >
             <!-- IT Architecture -->
             <div class="col card-with-rectangle-wrapper mx-auto mx-xxl-0">
@@ -287,7 +275,7 @@
         </div>
       </section>
       <!-- Building success -->
-      <section class="container py-5rem">
+      <section class="container paddingy-2">
         <h1 class="h3 txt-gray-800 title-subtitle-mb text-uppercase">
           building success together
         </h1>
@@ -295,7 +283,7 @@
           our team, our locations, our legacy
         </h2>
         <!-- first row -->
-        <div class="row flex-column flex-lg-row gap-3 px-xs-075rem mb-3">
+        <div class="row flex-column flex-lg-row gap-3 paddingx-xs-1 mb-3">
           <!-- Personnel-->
           <div class="card col benefits-card mx-auto mx-lg-0">
             <div class="card-body">
@@ -330,18 +318,20 @@
           </div>
         </div>
         <!-- second row -->
-        <div class="row flex-column flex-lg-row gap-3 px-xs-075rem">
+        <div class="row flex-column flex-lg-row gap-3 paddingx-xs-1">
           <!-- Years -->
           <div class="card col benefits-card mx-auto mx-lg-0">
             <div class="card-body">
               <div
                 class="card-statistics d-flex align-items-center justify-content-center"
               >
-                <p class="h1 txt-yoso-blue-700 mb-0 companyYears"></p>
+                <p id="companyYearsHeading" class="h1 txt-yoso-blue-700 mb-0">
+                  18
+                </p>
               </div>
               <div class="d-flex flex-column">
                 <h3 class="card-title h4 txt-yoso-blue-800 mb-3">
-                  <span class="companyYears"></span> years and going strong
+                  <span id="companyYearsPara">18</span> years and going strong
                 </h3>
                 <p class="card-text subtitle txt-gray-800">
                   Service for global companies and public administration
@@ -373,7 +363,7 @@
       <!-- Contact us-->
       <section
         id="contacts"
-        class="container-fluid py-5rem bg-yoso-blue-800 border-bottom-gray-200 border-radius-top-625rem"
+        class="container-fluid paddingy-2 bg-yoso-blue-800 border-bottom-gray-200 border-radius-top-1"
       >
         <div class="container">
           <h1 class="h3 text-white title-content-mb text-uppercase">
@@ -384,20 +374,20 @@
             <span class="h5 txt-gradient">your business grow</span>
           </h2>
           <h3 class="subtitle text-white opacity-08 mb-5">
-            Let's collaborate and explore the possibilities. <br />
+            Let's collaborate and explore the possibilities. <br>
             <!-- Book a consultation. -->
           </h3>
           <div class="row">
-            <div class="col-12 col-lg-6 gap-175rem text-white">
+            <div class="col-12 col-lg-6 space-3 text-white">
               <p class="paragraph text-uppercase opacity-08 mb-2">email</p>
               <p class="h5 mb-3 mb-lg-5">customerservice@yoso.fi​</p>
               <p class="paragraph text-uppercase opacity-08 mb-2">address</p>
               <p class="h5 mb-3 mb-lg-0">
-                Yoso Oy <br />
+                Yoso Oy <br>
                 Säterintie 6, FI-37600 Valkeakoski
               </p>
             </div>
-            <div class="col-12 col-lg-6 gap-175rem text-white">
+            <div class="col-12 col-lg-6 space-3 text-white">
               <p class="paragraph text-uppercase opacity-08 mb-2">phone</p>
               <p class="h5 mb-3 mb-lg-5">040 776 8972</p>
 
@@ -412,7 +402,7 @@
                 action="mailto:customerservice@yoso.fi?subject=Contact form"
                 method="post"
                 enctype="text/plain"
-                class="d-flex flex-column gap-088rem"
+                class="d-flex flex-column space-2"
               >
 
               <div class="form-floating bg-yoso-blue-800">
@@ -422,7 +412,7 @@
                     id="name"
                     name="name"
                     placeholder="Name"
-                  />
+                  >
                   <label for="name">Name</label>
                 </div>
 
@@ -434,7 +424,7 @@
                     id="email"
                     name="email"
                     placeholder="Email *"
-                  />
+                  >
                   <label for="email">Email *</label>
                 </div>
 
@@ -445,13 +435,13 @@
                     id="phone"
                     name="phone"
                     placeholder="Phone number"
-                  />
+                  >
                   <label for="phone">Phone</label>
                 </div>
 
                 <div class="form-floating bg-yoso-blue-800">
                   <textarea
-                    class="form-control min-height-68rem"
+                    class="form-control min-height-68rem message"
                     placeholder="Message"
                     id="message"
                     name="message"
@@ -467,7 +457,7 @@
                     value=""
                     id="privacyCheckbox"
                     required
-                  />
+                  >
                   <label
                     class="form-check-label paragraph text-white"
                     for="privacyCheckbox"
@@ -485,43 +475,42 @@
                 </div>
                 <button
                   type="submit"
-                  id="contact-button"
-                  class="btn btn-primary contact-button-gradient text-uppercase"
+                  class="btn btn-primary contact-button contact-button-gradient text-uppercase"
                 >
                   Send
                 </button>
-              </form> -->
-          <!-- </div> -->
+          </form>  -->
+          </div>
         </div>
       </section>
     </main>
     <footer
       id="footer"
-      class="container-fluid py-25rem bg-yoso-blue-800 txt-gray-200"
+      class="container-fluid paddingy-1 bg-yoso-blue-800 txt-gray-200"
     >
       <div class="container">
-        <div class="row gap-5rem">
-          <div class="col-auto d-flex flex-column gap-062rem">
+        <div class="row space-5">
+          <div class="col-auto d-flex flex-column space-1">
             <h1 class="h5 text-white mb-0">Czech Republic</h1>
             <p class="details mb-0">
-              Yoso Czech s.r.o.<br />
-              Skrétova 475/83 <br />
+              Yoso Czech s.r.o.<br>
+              Skrétova 475/83 <br>
               301 00 Pilsen
             </p>
             <p class="details mb-0">czech@yoso.fi</p>
             <p class="details mb-0">Business ID: 01511211</p>
           </div>
-          <div class="col-auto d-flex flex-column gap-062rem">
+          <div class="col-auto d-flex flex-column space-1">
             <h1 class="h5 text-white mb-0">Finland</h1>
             <p class="details mb-0">
-              Yoso Oy<br />
-              Säterintie 6 <br />
+              Yoso Oy<br>
+              Säterintie 6 <br>
               FI-37600 Valkeakoski
             </p>
             <p class="details mb-0">customerservice@yoso.fi</p>
             <p class="details mb-0">Business ID: 200203-6</p>
           </div>
-          <div class="col-auto d-flex flex-column gap-062rem">
+          <div class="col-auto d-flex flex-column space-1">
             <h1 class="h5 text-white mb-0">Menu</h1>
             <a
               href="index.html"
@@ -540,10 +529,10 @@
             >
           </div>
         </div>
-        <hr class="txt-gray-200 my-2rem" />
-        <div class="row gap-375rem justify-content-center">
+        <hr class="txt-gray-200 marginy-3" >
+        <div class="row space-4 justify-content-center">
           <p class="col-auto paragraph mb-0">
-            &copy; <span class="currentYear"></span> | Yoso Oy. All rights
+            &copy; <span id="currentYear">2024</span> | Yoso Oy. All rights
             reserved
           </p>
           <!-- Commented out untill further notice -->
@@ -556,42 +545,14 @@
       </div>
     </footer>
     <!-- Boostrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JS -->
     <script src="js/script.js"></script>
     <script>
       // Get company years
-      document.querySelector(".companyYears").innerHTML =
-        new Date().getFullYear() - 2006;
-
-      // Add box shadow to the navbar once scrolled down
-      function addNavbarShadowOnScroll() {
-        const navbar = document.getElementById("navbarWrapper");
-        const heroSection = document.querySelector("#hero");
-
-        // Check if the navbar, and hero section exist
-        if (navbar && heroSection) {
-          window.addEventListener("scroll", function () {
-            // Get the top offset of the hero section
-            const heroTopOffset = heroSection.getBoundingClientRect().top;
-
-            // Check if the top of the page has passed the current hero section
-            if (heroTopOffset <= 0) {
-              // If passed, change navbar background color, add border, and set box shadow
-              navbar.style.boxShadow =
-                "0px 10px 16px 0px rgba(151, 162, 177, 0.1)";
-            } else {
-              // If not passed, revert to default styles
-              navbar.style.boxShadow = "";
-            }
-          });
-        }
-      }
-      addNavbarShadowOnScroll();
+      const companyYears = new Date().getFullYear() - 2006;
+      document.getElementById("companyYearsHeading").innerHTML = companyYears;
+      document.getElementById("companyYearsPara").innerHTML = companyYears;
     </script>
   </body>
 </html>
