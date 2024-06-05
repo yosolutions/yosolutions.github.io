@@ -3,7 +3,7 @@
     {
       "files": "*.html",
       "options": {
-        "htmlVoidElements": []
+        "htmlVoidElements": true
       }
     }
   ]

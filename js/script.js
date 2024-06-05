@@ -28,20 +28,17 @@ if (navbar && heroSection) {
 }
 
 // Function to toggle navbar button classes based on screen width
-function toggleButtonClass() {
-  const btn = document.getElementById("navbarBtn");
-  if (window.innerWidth < 992) {
-    // Check if screen width is less than 768px (typical mobile screen width)
-    btn.classList.remove("btn-primary");
-    btn.classList.remove("btn-shadow");
+const btn = document.getElementById("navbarBtn");
+// Check if screen size is up to 992px
+const mobileScreen = window.matchMedia("(max-width: 992px)");
+function toggleButtonClass(e) {
+  if (e.matches) {
+    btn.classList.remove("btn-primary", "btn-shadow");
     btn.classList.add("btn-link");
   } else {
     btn.classList.remove("btn-link");
-    btn.classList.add("btn-primary");
-    btn.classList.add("btn-shadow");
+    btn.classList.add("btn-primary", "btn-shadow");
   }
 }
-toggleButtonClass();
-
-// Listen to window resize
-window.addEventListener("resize", toggleButtonClass);
+mobileScreen.addEventListener("change", toggleButtonClass);
+toggleButtonClass(mobileScreen);

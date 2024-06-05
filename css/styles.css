@@ -338,7 +338,7 @@ body {
 .border-radius-bottom-left-1 {
   border-radius: 6.25rem 6.25rem 0 6.25rem;
 }
-.border-radius-5625rem {
+.border-radius-2 {
   border-bottom-right-radius: 56.25rem;
 }
 
@@ -409,6 +409,12 @@ body {
   width: 21.875rem;
   min-height: 17.5rem;
   border-radius: 1.875rem;
+}
+.card-with-rectangle > .card-body > .card-text li {
+  list-style: circle;
+}
+.card-with-rectangle > .card-body > .card-text li::marker {
+  color: var(--yoso-blue-600);
 }
 
 /* benefits-card */
@@ -516,9 +522,8 @@ body {
 }
 
 /* media queries */
-/* navbar-collapse animation only for up to lg screen sizes and users who have motion preference 'no-preference' */
-@media (prefers-reduced-motion: no-preference) and (max-width: 767px),
-  (prefers-reduced-motion: no-preference) and (min-width: 768px) {
+/* navbar-collapse animation only for users who have motion preference 'no-preference' */
+@media (prefers-reduced-motion: no-preference) {
   .navbar-collapse {
     animation: zoomIn 0.5s ease-in-out;
     -webkit-animation: zoomIn 0.5s ease-in-out;
@@ -562,14 +567,25 @@ body {
   .card-with-rectangle-wrapper {
     max-width: 21.875rem;
   }
+  .technologies-card-wrapper.card-with-rectangle-wrapper {
+    max-width: 26rem;
+  }
   .card-with-rectangle {
     min-width: 17.5rem;
     max-width: 20rem;
     max-height: 18.125rem;
   }
+  .technologies-card.card-with-rectangle {
+    min-width: 25rem;
+    min-height: 20rem;
+  }
   .card-with-rectangle-wrapper > .card-rectangle {
     width: 20rem;
     min-height: 18.125rem;
+  }
+  .technologies-card-wrapper.card-with-rectangle-wrapper > .card-rectangle {
+    width: 25rem;
+    min-height: 20rem;
   }
   .padding-3 {
     padding: 3rem;
@@ -584,7 +600,7 @@ body {
   .btn-hero {
     width: 100%;
   }
-  .border-radius-5625rem {
+  .border-radius-2 {
     border-bottom-right-radius: 22.25rem;
   }
 }
@@ -622,6 +638,10 @@ body {
     width: 40rem;
     min-height: 13.25rem;
   }
+  .technologies-card-wrapper.card-with-rectangle-wrapper > .card-rectangle {
+    width: 40rem;
+    min-height: 18rem;
+  }
   .padding-3 {
     padding: 5rem;
   }
@@ -635,7 +655,7 @@ body {
   .btn-hero {
     width: 100%;
   }
-  .border-radius-5625rem {
+  .border-radius-2 {
     border-bottom-right-radius: 19.25rem;
   }
 }
@@ -662,13 +682,17 @@ body {
     width: 40rem;
     min-height: 13.25rem;
   }
+  .technologies-card-wrapper.card-with-rectangle-wrapper > .card-rectangle {
+    width: 40rem;
+    min-height: 18rem;
+  }
   .bg-xs-lg-white {
     background-color: inherit;
   }
   .btn-hero {
     width: auto;
   }
-  .border-radius-5625rem {
+  .border-radius-2 {
     border-bottom-right-radius: 56.25rem;
   }
 }
@@ -694,12 +718,25 @@ body {
   .card-with-rectangle-wrapper {
     max-width: 21.875rem;
   }
+  .technologies-card-wrapper.card-with-rectangle-wrapper {
+    max-width: 23.875rem;
+  }
   .card-with-rectangle {
     max-width: 21.875rem;
     min-height: 17.5rem;
   }
+  .technologies-card.card-with-rectangle {
+    max-width: 23.875rem;
+    min-height: 19rem;
+  }
   .card-with-rectangle-wrapper > .card-rectangle {
     width: 21.875rem;
     min-height: 17.5rem;
+  }
+  .technologies-card-wrapper.card-with-rectangle-wrapper > .card-rectangle {
+    width: 21.875rem;
+    min-height: 19.5rem;
+    top: 1rem;
+    left: -0.6rem;
   }
 }
