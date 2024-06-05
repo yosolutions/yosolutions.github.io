@@ -1,3 +1,7 @@
 {
-  "html.autoClosingTags": false,
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "files.autoSave": "onFocusChange"
 }

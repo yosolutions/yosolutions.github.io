@@ -1,87 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoso: Your IT Solutions</title>
-    <link rel="icon" type="image/x-icon" href="images/yoso-symbol-blue.png">
 
-    <!-- Poppins font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    >
-    <!-- Bootstrap CSS-->
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Fontawesome icons -->
-    <link
-      rel="stylesheet"
-      href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoso: Your IT Solutions</title>
+  <link rel="icon" type="image/x-icon" href="images/yoso-symbol-blue.png">
 
-  <body>
-    <!-- Navbar -->
-    <div id="navbarWrapper" class="w-100 sticky-top px-2 px-sm-0 bg-white">
-      <nav
-        id="navbar"
-        class="navbar container navbar-expand-lg navbar-shadow justify-content-between flex-nowrap"
-      >
-        <a class="navbar-brand me-0 py-0 d-flex d-lg-none" href="index.html">
-          <img
-            src="images/yoso-wordmark-blue.png"
-            alt="Yoso logo"
-            width="150"
-            height="48"
-          >
+  <!-- Poppins font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap CSS-->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fontawesome icons -->
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbarWrapper" class="w-100 sticky-top px-2 px-sm-0 bg-white">
+    <nav id="navbar" class="navbar container navbar-expand-lg navbar-shadow justify-content-between flex-nowrap">
+      <a class="navbar-brand me-0 py-0 d-flex d-lg-none" href="index.html">
+        <img src="images/yoso-wordmark-blue.png" alt="Yoso logo" width="150" height="48">
+      </a>
+      <!-- toggler button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar items -->
+      <div
+        class="collapse navbar-collapse bg-white align-items-start align-items-lg-center justify-content-between gap-3 gap-lg-0"
+        id="collapse">
+        <a class="navbar-brand me-0 py-0 d-none d-lg-flex" href="index.html">
+          <img src="images/yoso-wordmark-blue.png" alt="YosoLogo" width="150" height="48">
         </a>
-        <!-- toggler button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapse"
-          aria-controls="navbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- navbar items -->
-        <div
-          class="collapse navbar-collapse bg-white align-items-start align-items-lg-center justify-content-between gap-3 gap-lg-0"
-          id="collapse"
-        >
-          <a class="navbar-brand me-0 py-0 d-none d-lg-flex" href="index.html">
-            <img
-              src="images/yoso-wordmark-blue.png"
-              alt="YosoLogo"
-              width="150"
-              height="48"
-            >
-          </a>
-          <ul class="navbar-nav gap-3 gap-lg-5 align-items-start">
-            <li class="nav-item">
-              <a class="nav-link active text-uppercase" href="index.html"
-                >home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="about.html">about</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="services.html"
-                >services</a
-              >
-            </li>
-          </ul>
-          <!-- Commented out untill further notice -->
-          <!-- <div class="vr d-lg-flex d-none align-self-center"></div> -->
-          <!-- languages -->
-          <!-- <ul class="navbar-nav gap-3 flex-row">
+        <ul class="navbar-nav gap-3 gap-lg-5 align-items-start">
+          <li class="nav-item">
+            <a class="nav-link active text-uppercase" href="index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="services.html">services</a>
+          </li>
+        </ul>
+        <!-- Commented out untill further notice -->
+        <!-- <div class="vr d-lg-flex d-none align-self-center"></div> -->
+        <!-- languages -->
+        <!-- <ul class="navbar-nav gap-3 flex-row">
             <li class="nav-item">
               <a class="nav-link text-uppercase" hreflang="index.html">CZ</a>
             </li>
@@ -94,310 +66,275 @@
               <a class="nav-link text-uppercase" hreflang="services.html">FI</a>
             </li>
           </ul> -->
-          <a
-            href="#contacts"
-            id="navbarBtn"
-            class="btn btn-primary btn-shadow text-decoration-none"
-            >Get in touch</a
-          >
-        </div>
-      </nav>
-    </div>
+        <a href="#contacts" id="navbarBtn" class="btn btn-primary btn-shadow text-decoration-none">Get in touch</a>
+      </div>
+    </nav>
+  </div>
 
-    <main>
-      <!-- Hero-->
-      <section id="hero" class="container hero-padding">
-        <div
-          class="row flex-column-reverse flex-lg-row justify-content-between"
-        >
-          <div class="col-12 col-lg-6">
-            <h2
-              class="subtitle txt-gray-600 text-uppercase hero-subtitle-mb mt-5 mt-lg-0"
-            >
-              your reliable technology partner
-            </h2>
-            <h1 class="hero-title-semibold mt-0">
-              Gain competitive edge in the digital world
-            </h1>
-            <a
-              href="#contacts"
-              class="btn btn-primary text-decoration-none btn-hero mt-5"
-              >Contact us</a
-            >
-          </div>
-          <div
-            class="col-12 col-md-8 col-lg-5 mx-auto mx-lg-0 d-flex justify-content-center"
-          >
-            <img
-              src="images/globe.jpg"
-              alt="Blue globe"
-              width="400"
-              height="400"
-              class="object-fit-contain hero-img"
-            >
-          </div>
-        </div>
-      </section>
-      <!-- Benefits -->
-      <section class="container paddingy-2">
-        <h1 class="h3 txt-gray-800 title-content-mb text-uppercase">
-          Discover the power of your business with us
-        </h1>
-        <div class="row flex-column flex-lg-row gap-3 paddingx-xs-1">
-          <!-- Flexibility and Innovation card -->
-          <div class="card col card-with-icon mx-auto mx-lg-0">
-            <div class="card-body">
-              <div class="d-flex marginb-1 txt-yoso-blue-800">
-                <h2 class="card-icon mb-0">
-                  <i class="fa-solid fa-lightbulb"></i>
-                </h2>
-                <h2 class="card-title h4 mb-0 d-flex align-items-center">
-                  Flexibility and Innovation
-                </h2>
-              </div>
-              <p class="card-text paragraph txt-gray-800">
-                Stay ahead with our flexible and innovative IT infrastructure
-                solutions. Integrate new technologies effortlessly and drive
-                your digital transformation.
-              </p>
-            </div>
-          </div>
-          <!-- Scalability and Performance Optimization card-->
-          <div class="card col card-with-icon mx-auto mx-lg-0">
-            <div class="card-body">
-              <div class="d-flex marginb-1 txt-yoso-blue-800">
-                <h2 class="card-icon mb-0">
-                  <i class="fa-solid fa-chart-line"></i>
-                </h2>
-                <h2 class="card-title h4 mb-0 d-flex align-items-center">
-                  Scalability and Performance Optimization
-                </h2>
-              </div>
-              <p class="card-text paragraph txt-gray-800">
-                Experience seamless scalability and optimized performance with
-                our IT infrastructure solutions. Maximize efficiency and
-                productivity as your business grows.
-              </p>
-            </div>
-          </div>
-          <!-- Reliability and Security -->
-          <div class="card col card-with-icon mx-auto mx-lg-0">
-            <div class="card-body">
-              <div class="d-flex marginb-1 txt-yoso-blue-800">
-                <h2 class="card-icon mb-0">
-                  <i class="fa-solid fa-gears"></i>
-                </h2>
-                <h2 class="card-title h4 mb-0 d-flex align-items-center">
-                  Reliability and Security
-                </h2>
-              </div>
-              <p class="card-text paragraph txt-gray-800">
-                Build robust, reliable IT infrastructures for uninterrupted
-                operations. Our advanced security measures protect your valuable
-                data from cyber threats.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Services -->
-      <section
-        class="container-fluid paddingy-2 bg-yoso-blue-500 border-radius-1"
-      >
-        <div class="container">
-          <h1 class="h3 txt-yoso-blue-800 title-content-mb text-uppercase">
-            our services
-          </h1>
-          <h2 class="h3 fw-medium text-white title-content-mb">
-            At YOSO, we provide our clients with high-quality technology
-            solutions. Our team of experts has years of experience in the
-            industry and is committed to delivering innovative and effective
-            services that meet your unique needs. We want to make your life
-            easier.
+  <main>
+    <!-- Hero-->
+    <section id="hero" class="container hero-padding">
+      <div class="row flex-column-reverse flex-lg-row justify-content-between">
+        <div class="col-12 col-lg-6">
+          <h2 class="subtitle txt-gray-600 text-uppercase hero-subtitle-mb mt-5 mt-lg-0">
+            your reliable technology partner
           </h2>
-          <!-- cards -->
-          <div
-            class="row flex-column flex-xxl-row justify-content-xxl-around gap-5 gap-xxl-0 marginb-2"
-          >
-            <!-- IT Architecture -->
-            <div class="col card-with-rectangle-wrapper mx-auto mx-xxl-0">
-              <div class="card-with-rectangle card">
-                <div class="card-body">
-                  <h3 class="card-title h4 txt-yoso-blue-500">
-                    IT Architecture
-                  </h3>
-                  <p class="card-text paragraph txt-gray-800">
-                    We provide IT architecture services that are tailored to
-                    your specific needs. Our team of experts will work with you
-                    to design and implement a customized infrastructure that
-                    supports your business goals and objectives.
-                  </p>
-                </div>
-              </div>
-              <div class="card-rectangle bg-yoso-blue-100"></div>
+          <h1 class="hero-title-semibold mt-0">
+            Gain competitive edge in the digital world
+          </h1>
+          <a href="#contacts" class="btn btn-primary text-decoration-none btn-hero mt-5">Contact us</a>
+        </div>
+        <div class="col-12 col-md-8 col-lg-5 mx-auto mx-lg-0 d-flex justify-content-center">
+          <img src="images/globe.jpg" alt="Blue globe" width="400" height="400" class="object-fit-contain hero-img">
+        </div>
+      </div>
+    </section>
+    <!-- Benefits -->
+    <section class="container paddingy-2">
+      <h1 class="h3 txt-gray-800 title-content-mb text-uppercase">
+        Discover the power of your business with us
+      </h1>
+      <div class="row flex-column flex-lg-row gap-3 paddingx-xs-1">
+        <!-- Flexibility and Innovation card -->
+        <div class="card col card-with-icon mx-auto mx-lg-0">
+          <div class="card-body">
+            <div class="d-flex marginb-1 txt-yoso-blue-800">
+              <h2 class="card-icon mb-0">
+                <i class="fa-solid fa-lightbulb"></i>
+              </h2>
+              <h2 class="card-title h4 mb-0 d-flex align-items-center">
+                Flexibility and Innovation
+              </h2>
             </div>
-            <!-- Software Development -->
-            <div class="col card-with-rectangle-wrapper mx-auto mx-xxl-0">
-              <div class="card-with-rectangle card">
-                <div class="card-body">
-                  <h3 class="card-title h4 txt-yoso-blue-500">
-                    Software Development
-                  </h3>
-                  <p class="card-text paragraph txt-gray-800">
-                    We offer software development services that are customized
-                    to your needs. Our team of developers will work with you to
-                    create software solutions that are tailored to your business
-                    requirements and help you achieve your goals.
-                  </p>
-                </div>
-              </div>
-              <div class="card-rectangle bg-yoso-blue-600"></div>
-            </div>
-            <!-- Consulting Services -->
-            <div class="col card-with-rectangle-wrapper mx-auto mx-xxl-0">
-              <div class="card-with-rectangle card">
-                <div class="card-body">
-                  <h3 class="card-title h4 txt-yoso-blue-500">
-                    Consulting Services
-                  </h3>
-                  <p class="card-text paragraph txt-gray-800">
-                    Our consulting services are designed to help you navigate
-                    the complex world of technology. We provide expert advice
-                    and guidance to help you make informed decisions about your
-                    IT infrastructure and digital solutions.
-                  </p>
-                </div>
-              </div>
-              <div class="card-rectangle bg-yoso-blue-800"></div>
-            </div>
+            <p class="card-text paragraph txt-gray-800">
+              Stay ahead with our flexible and innovative IT infrastructure
+              solutions. Integrate new technologies effortlessly and drive
+              your digital transformation.
+            </p>
           </div>
         </div>
-      </section>
-      <!-- Building success -->
-      <section class="container paddingy-2">
-        <h1 class="h3 txt-gray-800 title-subtitle-mb text-uppercase">
-          building success together
+        <!-- Scalability and Performance Optimization card-->
+        <div class="card col card-with-icon mx-auto mx-lg-0">
+          <div class="card-body">
+            <div class="d-flex marginb-1 txt-yoso-blue-800">
+              <h2 class="card-icon mb-0">
+                <i class="fa-solid fa-chart-line"></i>
+              </h2>
+              <h2 class="card-title h4 mb-0 d-flex align-items-center">
+                Scalability and Performance Optimization
+              </h2>
+            </div>
+            <p class="card-text paragraph txt-gray-800">
+              Experience seamless scalability and optimized performance with
+              our IT infrastructure solutions. Maximize efficiency and
+              productivity as your business grows.
+            </p>
+          </div>
+        </div>
+        <!-- Reliability and Security -->
+        <div class="card col card-with-icon mx-auto mx-lg-0">
+          <div class="card-body">
+            <div class="d-flex marginb-1 txt-yoso-blue-800">
+              <h2 class="card-icon mb-0">
+                <i class="fa-solid fa-gears"></i>
+              </h2>
+              <h2 class="card-title h4 mb-0 d-flex align-items-center">
+                Reliability and Security
+              </h2>
+            </div>
+            <p class="card-text paragraph txt-gray-800">
+              Build robust, reliable IT infrastructures for uninterrupted
+              operations. Our advanced security measures protect your valuable
+              data from cyber threats.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <section class="container-fluid paddingy-2 bg-yoso-blue-500 border-radius-1">
+      <div class="container">
+        <h1 class="h3 txt-yoso-blue-800 title-content-mb text-uppercase">
+          our services
         </h1>
-        <h2 class="subtitle txt-gray-600 title-content-mb text-uppercase">
-          our team, our locations, our legacy
+        <h2 class="h3 fw-medium text-white title-content-mb">
+          At YOSO, we provide our clients with high-quality technology
+          solutions. Our team of experts has years of experience in the
+          industry and is committed to delivering innovative and effective
+          services that meet your unique needs. We want to make your life
+          easier.
         </h2>
-        <!-- first row -->
-        <div class="row flex-column flex-lg-row gap-3 paddingx-xs-1 mb-3">
-          <!-- Personnel-->
-          <div class="card col benefits-card mx-auto mx-lg-0">
-            <div class="card-body">
-              <div
-                class="card-statistics d-flex align-items-center justify-content-center"
-              >
-                <p class="h1 txt-yoso-blue-700 mb-0">18+</p>
-              </div>
-              <div class="d-flex flex-column">
-                <h3 class="card-title h4 txt-yoso-blue-800 mb-3">Personnel</h3>
-                <p class="card-text subtitle txt-gray-800">
-                  18+ professionals in Finland, Czech Republic, Slovakia
+        <!-- cards -->
+        <div class="row flex-column flex-xxl-row justify-content-xxl-around gap-5 gap-xxl-0 marginb-2">
+          <!-- IT Architecture -->
+          <div class="col card-with-rectangle-wrapper mx-auto mx-xxl-0">
+            <div class="card-with-rectangle card">
+              <div class="card-body">
+                <h3 class="card-title h4 txt-yoso-blue-500">
+                  IT Architecture
+                </h3>
+                <p class="card-text paragraph txt-gray-800">
+                  We provide IT architecture services that are tailored to
+                  your specific needs. Our team of experts will work with you
+                  to design and implement a customized infrastructure that
+                  supports your business goals and objectives.
                 </p>
               </div>
             </div>
+            <div class="card-rectangle bg-yoso-blue-100"></div>
           </div>
-          <!-- Countries -->
-          <div class="card col benefits-card mx-auto mx-lg-0">
-            <div class="card-body">
-              <div
-                class="card-statistics d-flex align-items-center justify-content-center"
-              >
-                <p class="h1 txt-yoso-blue-700 mb-0">3</p>
-              </div>
-              <div class="d-flex flex-column">
-                <h3 class="card-title h4 txt-yoso-blue-800 mb-3">Countries</h3>
-                <p class="card-text subtitle txt-gray-800">
-                  Service for global companies and public administration
+          <!-- Software Development -->
+          <div class="col card-with-rectangle-wrapper mx-auto mx-xxl-0">
+            <div class="card-with-rectangle card">
+              <div class="card-body">
+                <h3 class="card-title h4 txt-yoso-blue-500">
+                  Software Development
+                </h3>
+                <p class="card-text paragraph txt-gray-800">
+                  We offer software development services that are customized
+                  to your needs. Our team of developers will work with you to
+                  create software solutions that are tailored to your business
+                  requirements and help you achieve your goals.
                 </p>
               </div>
             </div>
+            <div class="card-rectangle bg-yoso-blue-600"></div>
+          </div>
+          <!-- Consulting Services -->
+          <div class="col card-with-rectangle-wrapper mx-auto mx-xxl-0">
+            <div class="card-with-rectangle card">
+              <div class="card-body">
+                <h3 class="card-title h4 txt-yoso-blue-500">
+                  Consulting Services
+                </h3>
+                <p class="card-text paragraph txt-gray-800">
+                  Our consulting services are designed to help you navigate
+                  the complex world of technology. We provide expert advice
+                  and guidance to help you make informed decisions about your
+                  IT infrastructure and digital solutions.
+                </p>
+              </div>
+            </div>
+            <div class="card-rectangle bg-yoso-blue-800"></div>
           </div>
         </div>
-        <!-- second row -->
-        <div class="row flex-column flex-lg-row gap-3 paddingx-xs-1">
-          <!-- Years -->
-          <div class="card col benefits-card mx-auto mx-lg-0">
-            <div class="card-body">
-              <div
-                class="card-statistics d-flex align-items-center justify-content-center"
-              >
-                <p id="companyYearsHeading" class="h1 txt-yoso-blue-700 mb-0">
-                  18
-                </p>
-              </div>
-              <div class="d-flex flex-column">
-                <h3 class="card-title h4 txt-yoso-blue-800 mb-3">
-                  <span id="companyYearsPara">18</span> years and going strong
-                </h3>
-                <p class="card-text subtitle txt-gray-800">
-                  Service for global companies and public administration
-                </p>
-              </div>
+      </div>
+    </section>
+    <!-- Building success -->
+    <section class="container paddingy-2">
+      <h1 class="h3 txt-gray-800 title-subtitle-mb text-uppercase">
+        building success together
+      </h1>
+      <h2 class="subtitle txt-gray-600 title-content-mb text-uppercase">
+        our team, our locations, our legacy
+      </h2>
+      <!-- first row -->
+      <div class="row flex-column flex-lg-row gap-3 paddingx-xs-1 mb-3">
+        <!-- Personnel-->
+        <div class="card col benefits-card mx-auto mx-lg-0">
+          <div class="card-body">
+            <div class="card-statistics d-flex align-items-center justify-content-center">
+              <p class="h1 txt-yoso-blue-700 mb-0">18+</p>
             </div>
-          </div>
-          <!-- Areas -->
-          <div class="card col benefits-card mx-auto mx-lg-0">
-            <div class="card-body">
-              <div
-                class="card-statistics d-flex align-items-center justify-content-center"
-              >
-                <p class="h1 txt-yoso-blue-700 mb-0">5</p>
-              </div>
-              <div class="d-flex flex-column">
-                <h3 class="card-title h4 txt-yoso-blue-800 mb-3">
-                  Areas of specialization
-                </h3>
-                <p class="card-text subtitle txt-gray-800">
-                  IT infrastructure, Cyber Security, Software innovation, Data
-                  optimisation, Agile IT development
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Contact us-->
-      <section
-        id="contacts"
-        class="container-fluid paddingy-2 bg-yoso-blue-800 border-bottom-gray-200 border-radius-top-1"
-      >
-        <div class="container">
-          <h1 class="h3 text-white title-content-mb text-uppercase">
-            Let's meet - contact us
-          </h1>
-          <h2 class="h5 text-uppercase text-white">
-            We are ready to help
-            <span class="h5 txt-gradient">your business grow</span>
-          </h2>
-          <h3 class="subtitle text-white opacity-08 mb-5">
-            Let's collaborate and explore the possibilities.
-            <!-- Book a consultation. -->
-          </h3>
-          <div class="row">
-            <div class="col-12 col-lg-6 space-3 text-white">
-              <p class="paragraph text-uppercase opacity-08 mb-2">email</p>
-              <p class="h5 mb-3 mb-lg-5">customerservice@yoso.fi​</p>
-              <p class="paragraph text-uppercase opacity-08 mb-2">address</p>
-              <p class="h5 mb-3 mb-lg-0">
-                Yoso Oy <br>
-                Säterintie 6, FI-37600 Valkeakoski
+            <div class="d-flex flex-column">
+              <h3 class="card-title h4 txt-yoso-blue-800 mb-3">Personnel</h3>
+              <p class="card-text subtitle txt-gray-800">
+                18+ professionals in Finland, Czech Republic, Slovakia
               </p>
             </div>
-            <div class="col-12 col-lg-6 space-3 text-white">
-              <p class="paragraph text-uppercase opacity-08 mb-2">phone</p>
-              <p class="h5 mb-3 mb-lg-5">040 776 8972</p>
+          </div>
+        </div>
+        <!-- Countries -->
+        <div class="card col benefits-card mx-auto mx-lg-0">
+          <div class="card-body">
+            <div class="card-statistics d-flex align-items-center justify-content-center">
+              <p class="h1 txt-yoso-blue-700 mb-0">3</p>
+            </div>
+            <div class="d-flex flex-column">
+              <h3 class="card-title h4 txt-yoso-blue-800 mb-3">Countries</h3>
+              <p class="card-text subtitle txt-gray-800">
+                Service for global companies and public administration
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- second row -->
+      <div class="row flex-column flex-lg-row gap-3 paddingx-xs-1">
+        <!-- Years -->
+        <div class="card col benefits-card mx-auto mx-lg-0">
+          <div class="card-body">
+            <div class="card-statistics d-flex align-items-center justify-content-center">
+              <p id="companyYearsHeading" class="h1 txt-yoso-blue-700 mb-0">
+                18
+              </p>
+            </div>
+            <div class="d-flex flex-column">
+              <h3 class="card-title h4 txt-yoso-blue-800 mb-3">
+                <span id="companyYearsPara">18</span> years and going strong
+              </h3>
+              <p class="card-text subtitle txt-gray-800">
+                Service for global companies and public administration
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Areas -->
+        <div class="card col benefits-card mx-auto mx-lg-0">
+          <div class="card-body">
+            <div class="card-statistics d-flex align-items-center justify-content-center">
+              <p class="h1 txt-yoso-blue-700 mb-0">5</p>
+            </div>
+            <div class="d-flex flex-column">
+              <h3 class="card-title h4 txt-yoso-blue-800 mb-3">
+                Areas of specialization
+              </h3>
+              <p class="card-text subtitle txt-gray-800">
+                IT infrastructure, Cyber Security, Software innovation, Data
+                optimisation, Agile IT development
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact us-->
+    <section id="contacts"
+      class="container-fluid paddingy-2 bg-yoso-blue-800 border-bottom-gray-200 border-radius-top-1">
+      <div class="container">
+        <h1 class="h3 text-white title-content-mb text-uppercase">
+          Let's meet - contact us
+        </h1>
+        <h2 class="h5 text-uppercase text-white">
+          We are ready to help
+          <span class="h5 txt-gradient">your business grow</span>
+        </h2>
+        <h3 class="subtitle text-white opacity-08 mb-5">
+          Let's collaborate and explore the possibilities.
+          <!-- Book a consultation. -->
+        </h3>
+        <div class="row">
+          <div class="col-12 col-lg-6 space-3 text-white">
+            <p class="paragraph text-uppercase opacity-08 mb-2">email</p>
+            <p class="h5 mb-3 mb-lg-5">customerservice@yoso.fi​</p>
+            <p class="paragraph text-uppercase opacity-08 mb-2">address</p>
+            <p class="h5 mb-3 mb-lg-0">
+              Yoso Oy <br>
+              Säterintie 6, FI-37600 Valkeakoski
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 space-3 text-white">
+            <p class="paragraph text-uppercase opacity-08 mb-2">phone</p>
+            <p class="h5 mb-3 mb-lg-5">040 776 8972</p>
 
-              <p class="paragraph text-uppercase opacity-08 mb-2">
-                business ID
-              </p>
-              <p class="h5 mb-0">200203-6</p>
-            </div>
+            <p class="paragraph text-uppercase opacity-08 mb-2">
+              business ID
+            </p>
+            <p class="h5 mb-0">200203-6</p>
           </div>
-          <!-- Commented out untill further notice-->
-          <!-- <form
+        </div>
+        <!-- Commented out untill further notice-->
+        <!-- <form
                 action="mailto:customerservice@yoso.fi?subject=Contact form"
                 method="post"
                 enctype="text/plain"
@@ -479,79 +416,68 @@
                   Send
                 </button>
           </form>  -->
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer
-      id="footer"
-      class="container-fluid paddingy-1 bg-yoso-blue-800 txt-gray-200"
-    >
-      <div class="container">
-        <div class="row gap-5 gap-lg-0">
-          <div class="col-12 col-lg-3 d-flex flex-column space-1">
-            <h1 class="h5 text-white mb-0">Czech Republic</h1>
-            <p class="details mb-0">
-              Yoso Czech s.r.o.<br>
-              Skrétova 475/83 <br>
-              301 00 Pilsen
-            </p>
-            <p class="details mb-0">czech@yoso.fi</p>
-            <p class="details mb-0">Business ID: 01511211</p>
-          </div>
-          <div class="col-12 col-lg-3 d-flex flex-column space-1">
-            <h1 class="h5 text-white mb-0">Finland</h1>
-            <p class="details mb-0">
-              Yoso Oy<br>
-              Säterintie 6<br>
-              FI-37600 Valkeakoski
-            </p>
-            <p class="details mb-0">customerservice@yoso.fi</p>
-            <p class="details mb-0">Business ID: 200203-6</p>
-          </div>
-          <div class="col-12 col-lg-6 d-flex flex-column space-1">
-            <h1 class="h5 text-white mb-0">Menu</h1>
-            <a
-              href="index.html"
-              class="details active txt-gray-200 text-decoration-none mb-0 footer-link"
-              >Home
-            </a>
-            <a
-              href="about.html"
-              class="details txt-gray-200 text-decoration-none mb-0 footer-link"
-              >About
-            </a>
-            <a
-              href="services.html"
-              class="details txt-gray-200 text-decoration-none mb-0 footer-link"
-              >Services
-            </a>
-          </div>
-        </div>
-        <hr class="txt-gray-200 marginy-3" >
-        <div class="row space-4 justify-content-center">
-          <p class="col-auto paragraph mb-0">
-            &copy; <span id="currentYear">2024</span> | Yoso Oy. All rights
-            reserved
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="container-fluid paddingy-1 bg-yoso-blue-800 txt-gray-200">
+    <div class="container">
+      <div class="row gap-5 gap-lg-0">
+        <div class="col-12 col-lg-3 d-flex flex-column space-1">
+          <h1 class="h5 text-white mb-0">Czech Republic</h1>
+          <p class="details mb-0">
+            Yoso Czech s.r.o.<br>
+            Skrétova 475/83 <br>
+            301 00 Pilsen
           </p>
-          <!-- Commented out untill further notice -->
-          <!-- <a
+          <p class="details mb-0">czech@yoso.fi</p>
+          <p class="details mb-0">Business ID: 01511211</p>
+        </div>
+        <div class="col-12 col-lg-3 d-flex flex-column space-1">
+          <h1 class="h5 text-white mb-0">Finland</h1>
+          <p class="details mb-0">
+            Yoso Oy<br>
+            Säterintie 6<br>
+            FI-37600 Valkeakoski
+          </p>
+          <p class="details mb-0">customerservice@yoso.fi</p>
+          <p class="details mb-0">Business ID: 200203-6</p>
+        </div>
+        <div class="col-12 col-lg-6 d-flex flex-column space-1">
+          <h1 class="h5 text-white mb-0">Menu</h1>
+          <a href="index.html" class="details active txt-gray-200 text-decoration-none mb-0 footer-link">Home
+          </a>
+          <a href="about.html" class="details txt-gray-200 text-decoration-none mb-0 footer-link">About
+          </a>
+          <a href="services.html" class="details txt-gray-200 text-decoration-none mb-0 footer-link">Services
+          </a>
+        </div>
+      </div>
+      <hr class="txt-gray-200 marginy-3">
+      <div class="row space-4 justify-content-center">
+        <p class="col-auto paragraph mb-0">
+          &copy; <span id="currentYear">2024</span> | Yoso Oy. All rights
+          reserved
+        </p>
+        <!-- Commented out untill further notice -->
+        <!-- <a
             href="#"
             class="col-auto paragraph txt-gray-200 text-decoration-none mb-0 footer-link"
             >Privacy Policy</a
           > -->
-        </div>
       </div>
-    </footer>
-    <!-- Boostrap JS -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- JS -->
-    <script src="js/script.js"></script>
-    <script>
-      // Get company years
-      const companyYears = new Date().getFullYear() - 2006;
-      document.getElementById("companyYearsHeading").innerHTML = companyYears;
-      document.getElementById("companyYearsPara").innerHTML = companyYears;
-    </script>
-  </body>
+    </div>
+  </footer>
+  <!-- Boostrap JS -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS -->
+  <script src="js/script.js"></script>
+  <script>
+    // Get company years
+    const companyYears = new Date().getFullYear() - 2006;
+    document.getElementById("companyYearsHeading").innerHTML = companyYears;
+    document.getElementById("companyYearsPara").innerHTML = companyYears;
+  </script>
+</body>
+
 </html>
