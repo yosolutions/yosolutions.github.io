@@ -742,13 +742,13 @@ body {
     min-height: 17.5rem;
   }
   .technologies-card-wrapper.card-with-rectangle-wrapper > .card-rectangle {
-    width: 21.875rem;
+    width: 23.875rem;
     min-height: 20.875rem;
     top: 1rem;
     left: -0.6rem;
   }
   .technologies-card-wrapper.card-with-rectangle-wrapper > .card {
-    width: 40rem;
+    width: 23.875rem;
     min-height: 20.875rem;
   }
 }
