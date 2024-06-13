@@ -640,7 +640,11 @@ body {
   }
   .technologies-card-wrapper.card-with-rectangle-wrapper > .card-rectangle {
     width: 40rem;
-    min-height: 18rem;
+    min-height: 19.375rem;
+  }
+  .technologies-card-wrapper.card-with-rectangle-wrapper > .card {
+    width: 40rem;
+    min-height: 19.375rem;
   }
   .padding-3 {
     padding: 5rem;
@@ -684,7 +688,11 @@ body {
   }
   .technologies-card-wrapper.card-with-rectangle-wrapper > .card-rectangle {
     width: 40rem;
-    min-height: 18rem;
+    min-height: 19.375rem;
+  }
+  .technologies-card-wrapper.card-with-rectangle-wrapper > .card {
+    width: 40rem;
+    min-height: 19.375rem;
   }
   .bg-xs-lg-white {
     background-color: inherit;
@@ -735,8 +743,12 @@ body {
   }
   .technologies-card-wrapper.card-with-rectangle-wrapper > .card-rectangle {
     width: 21.875rem;
-    min-height: 19.5rem;
+    min-height: 20.875rem;
     top: 1rem;
     left: -0.6rem;
+  }
+  .technologies-card-wrapper.card-with-rectangle-wrapper > .card {
+    width: 40rem;
+    min-height: 20.875rem;
   }
 }
