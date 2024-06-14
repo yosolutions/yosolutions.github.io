@@ -37,5 +37,5 @@ deploy-production:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   script:
     - chmod 600 ${SSH_KEY}
-    - scp -i ${SSH_KEY} -o StrictHostKeyChecking=no website.tar.gz ${SSH_USER}@${SSH_HOST}:/opt/website/website.tar.gz
-    - ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} "cd /opt/website && ./deploy.sh"
+    - scp -i ${SSH_KEY} -o StrictHostKeyChecking=no website.tar.gz ${SSH_USER}@${SSH_HOST}:/home/${SSH_USER}/website.tar.gz
+    - ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} "./home/${SSH_USER}/deploy.sh"
