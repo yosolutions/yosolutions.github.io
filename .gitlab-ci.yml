@@ -9,17 +9,13 @@ stages:
   - build
   - deploy
 
-variables:
-  DEVCZ_USER: "protector"
-  DEVCZ_HOST: "devcz.yoso.fi"
-
 create-archive:
   stage: build
   script:
     - echo "Downloading dependencies"
     - npm ci --cache .npm
     - echo "Creating archive"
-    - tar --exclude='.gitlab_ci.yml' -czf website.tar.gz * 
+    - tar --exclude='.*' -czf website.tar.gz * 
   artifacts:
     paths:
       - website.tar.gz
@@ -27,6 +23,6 @@ create-archive:
 deploy:
   stage: deploy
   script:
-    - chmod 600 ${DEVCZ_SSH_KEY}
-    - scp -i ${DEVCZ_SSH_KEY} -o StrictHostKeyChecking=no -o "PubkeyAcceptedAlgorithms=+ssh-rsa" website.tar.gz ${DEVCZ_USER}@${DEVCZ_HOST}:/opt/website/website.tar.gz
-    - ssh -i ${DEVCZ_SSH_KEY} -o StrictHostKeyChecking=no -o "PubkeyAcceptedAlgorithms=+ssh-rsa" ${DEVCZ_USER}@${DEVCZ_HOST} "cd /opt/website && ./deploy.sh"
+    - chmod 600 ${SSH_KEY}
+    - scp -i ${SSH_KEY} -o StrictHostKeyChecking=no -o "PubkeyAcceptedAlgorithms=+ssh-rsa" website.tar.gz ${SSH_USER}@${SSH_HOST}:/opt/website/website.tar.gz
+    - ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no -o "PubkeyAcceptedAlgorithms=+ssh-rsa" ${SSH_USER}@${SSH_HOST} "cd /opt/website && ./deploy.sh"
