@@ -22,6 +22,7 @@ create-archive:
 
 deploy:
   stage: deploy
+  environment: staging
   script:
     - chmod 600 ${SSH_KEY}
     - scp -i ${SSH_KEY} -o StrictHostKeyChecking=no -o "PubkeyAcceptedAlgorithms=+ssh-rsa" website.tar.gz ${SSH_USER}@${SSH_HOST}:/opt/website/website.tar.gz
