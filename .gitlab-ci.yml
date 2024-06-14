@@ -38,4 +38,4 @@ deploy-production:
   script:
     - chmod 600 ${SSH_KEY}
     - scp -i ${SSH_KEY} -o StrictHostKeyChecking=no website.tar.gz ${SSH_USER}@${SSH_HOST}:/home/${SSH_USER}/website.tar.gz
-    - ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} "./home/${SSH_USER}/deploy.sh"
+    - ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} /home/${SSH_USER}/deploy.sh
