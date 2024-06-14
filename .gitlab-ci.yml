@@ -1,5 +1,10 @@
 default:
-  image: maven:3-openjdk-11
+  image: node:20.12.2-bookworm
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - .npm
+
 stages:
   - build
   - deploy
@@ -11,6 +16,8 @@ variables:
 create-archive:
   stage: build
   script:
+    - echo "Downloading dependencies"
+    - npm ci --cache .npm
     - echo "Creating archive"
     - tar --exclude='.gitlab_ci.yml' -czf website.tar.gz * 
   artifacts:
