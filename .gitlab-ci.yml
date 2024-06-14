@@ -15,7 +15,7 @@ create-archive:
     - echo "Downloading dependencies"
     - npm ci --cache .npm
     - echo "Creating archive"
-    - tar -czf website.tar.gz .
+    - tar --exclude='.*' -czf website.tar.gz *
   artifacts:
     paths:
       - website.tar.gz
