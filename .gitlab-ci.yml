@@ -11,6 +11,9 @@ stages:
 
 create-archive:
   stage: build
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   script:
     - echo "Downloading dependencies"
     - npm ci --cache .npm
