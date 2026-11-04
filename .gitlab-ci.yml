@@ -28,16 +28,21 @@ deploy-staging:
   environment: staging
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+  needs:
+    - create-archive
   script:
-    - echo "Publishing to GitLab Pages..."
+    - mkdir -p public
+    - tar zxf website.tar.gz -C public
   pages:
-    publish: .
+    publish: public
 
 deploy-production-yoso-fi:
   stage: deploy
   environment: production yoso.fi
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  needs:
+    - create-archive
   script:
     - chmod 600 ${SSH_KEY}
     - scp -i ${SSH_KEY} -o StrictHostKeyChecking=no website.tar.gz ${SSH_USER}@${SSH_HOST}:/home/${SSH_USER}/website.tar.gz
